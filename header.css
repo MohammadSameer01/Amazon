@@ -223,6 +223,7 @@ select option {
     text-transform: capitalize;
     font-size: 3.2vw;
     text-align: center;
+    user-select: none;
 }
 
 
