@@ -322,7 +322,10 @@ main {
         margin:1vw 2vw;
     }
     .video-bottomtxt{
-        margin: 45vw 0 0 0.5vw;
+        height: 4vw;
+        width: 15vw;
+        margin: 41vw 0 0 2vw;
+        font-size: 1vw;
     }
 }
 
