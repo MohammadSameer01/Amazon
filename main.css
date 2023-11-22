@@ -233,6 +233,7 @@ main {
         width: 100vw;
         font-weight: 550;
         overflow: hidden;
+        user-select: none;
     }
 
     .main-one-upto650-containers img {
