@@ -1,362 +1,373 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
     <title>Amazon.com. Spend less. Smile more</title>
 
-    <link rel="icon" type="jpg"
-        href="data:image/png;base64,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">
-
-
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <link rel="icon" type="jpg" href="data:image/png;base64,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">
 
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="footer.css">
+
     
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+
 </head>
-
 <body>
+    
+    <header>
+        
+       <nav>
+        
+        <div class="nav-box-first">
 
+            <div class="nav-box-first-one borderonhover" title="amazon logo">
 
-
-    <!-- this is header -->
-
-    <header class="above-five-hundred">
-        <nav>
-            <div class="nav-one">
-                <ul>
-                    <li class="navs">
-                        <img src="PngItem_12080.png" alt="">
-                    </li>
-                    <li class="navs">
-                        <span class="material-symbols-outlined location-icon">location_on</span>
-                        <div class="li-inner-text">
-                            <div class="small-txt">Deliver to MOHAMMAD</div>
-                            <div class="big-text">Narsampet 506132</div>
-                        </div>
-                    </li>
-                    <li class="navs-three">
-                        <select name="dropdown" id="nav-dropdown">
-                            <option value="default" selected>All</option>
-                            <option class="dropdown-font-size" value=" ">Alexa Skills</option>
-                            <option class="dropdown-font-size" value="">Amazon Devices</option>
-                            <option class="dropdown-font-size" value="">Amazon Fashion</option>
-                            <option class="dropdown-font-size" value="">Amazon Fresh</option>
-                            <option class="dropdown-font-size" value="">Amazon Pharmacy</option>
-                            <option class="dropdown-font-size" value="">Appliances</option>
-                            <option class="dropdown-font-size" value="">Apps & Games</option>
-                            <option class="dropdown-font-size" value="">Audible Audio</option>
-                            <option class="dropdown-font-size" value="">Baby</option>
-                            <option class="dropdown-font-size" value="">Beauty</option>
-                            <option class="dropdown-font-size" value="">Books</option>
-                            <option class="dropdown-font-size" value="">Car & Motorbikes</option>
-                            <option class="dropdown-font-size" value="">Clothing & Accessories</option>
-                            <option class="dropdown-font-size" value="">Collectibles</option>
-                            <option class="dropdown-font-size" value="">Computer & Accessories</option>
-                            <option class="dropdown-font-size" value="">Electronics</option>
-                            <option class="dropdown-font-size" value="">Furniture</option>
-                            <option class="dropdown-font-size" value="">Garden & Outdoor</option>
-                            <option class="dropdown-font-size" value="">Giftcards</option>
-                            <option class="dropdown-font-size" value="">Grocery</option>
-                            <option class="dropdown-font-size" value="">Health</option>
-                            <option class="dropdown-font-size" value="">Home & Kitchen</option>
-                            <option class="dropdown-font-size" value="">Industrial & scientific</option>
-                            <option class="dropdown-font-size" value="">Jewellery</option>
-                            <option class="dropdown-font-size" value="">Kindle Store</option>
-                            <option class="dropdown-font-size" value="">Luggage & Bags</option>
-                            <option class="dropdown-font-size" value="">Luxury Beauty</option>
-                            <option class="dropdown-font-size" value="">Movies & TV shows</option>
-                            <option class="dropdown-font-size" value="">Music</option>
-                        </select>
-                        <input type="search" name="search-bar" id="search-bar" placeholder="Search Amazon.in">
-                        <span class="material-symbols-outlined search-icon">
-                            search
-                        </span>
-                    </li>
-                    <li class="navs">
-                        <img src="https://th.bing.com/th/id/OIP.gDlzAPxkwTNSlLymNYiLPAHaE8?pid=ImgDet&w=800&h=534&rs=1"
-                            alt="" class="indianflag">
-                        <div class="languageselector">en</div>
-                        <span class="material-symbols-outlined">
-                            arrow_drop_down
-                        </span>
-                    </li>
-                    <li class="navs">
-                        <div class="li-inner-text">
-                            <div class="small-txt colorwhite">Hello, Mohammad</div>
-                            <div class="big-text">Account & Lists</div>
-                        </div>
-                        <span class="material-symbols-outlined">
-                            arrow_drop_down
-                        </span>
-                    </li>
-                    <li class="navs">
-                        <div class="li-inner-text">
-                            <div class="small-txt colorwhite">Returns</div>
-                            <div class="big-text">& Orders</div>
-                        </div>
-                    </li>
-                    <li class="navs">
-                        <span class="material-symbols-outlined">
-                            shopping_cart
-                        </span>
-                        <div class="big-text">Cart</div>
-                    </li>
-                    <li>
-                        <span class="material-symbols-outlined menu-icon navs">
-                            menu
-                        </span>
-                    </li>
-                </ul>
             </div>
-        </nav>
-    </header>
-    <header class="upto-five-hundred">
 
-        <div class="header-uptofh-one">
-            <div class="header-one-left">
-                <span class="material-symbols-outlined mobile-menu-icon">
-                    menu
-                </span>
-                <img src="PngItem_12080.png" alt="" class="header-phone-logo">
-            </div>
-            <div class="header-one-right">
-                <div class="nameandprofilelogo">
-                    <div class="header-pfname">Mohammad</div>
-                    <span class="material-symbols-outlined">
-                        person
-                    </span>
+
+            <div class="nav-box-first-two borderonhover">
+                <div class="nav-box-first-two-one">
+                    <p>Deliver to</p>
                 </div>
-                <span class="material-symbols-outlined">
-                    shopping_cart
-                </span>
+                <div class="nav-box-first-two-two">
+                    <i class="fa-solid fa-location-dot" style="color: white;"></i>
+                    <p>India</p>
+                </div>
+            </div>
+
+
+            <div class="nav-box-first-three">
+
+                <select name="dropdown" id="nav-dropdown">
+                    <option value="default">ALL</option>
+                    <option class="dropdown-font-size" value=" ">Alexa Skills</option>
+                    <option class="dropdown-font-size" value="">Amazon Devices</option>
+                    <option class="dropdown-font-size" value="">Amazon Fashion</option>
+                    <option class="dropdown-font-size" value="">Amazon Fresh</option>
+                    <option class="dropdown-font-size" value="">Amazon Pharmacy</option>
+                    <option class="dropdown-font-size" value="">Appliances</option>
+                    <option class="dropdown-font-size" value="">Apps & Games</option>
+                    <option class="dropdown-font-size" value="">Audible Audio</option>
+                    <option class="dropdown-font-size" value="">Baby</option>
+                    <option class="dropdown-font-size" value="">Beauty</option>
+                    <option class="dropdown-font-size" value="">Books</option>
+                    <option class="dropdown-font-size" value="">Car & Motorbikes</option>
+                    <option class="dropdown-font-size" value="">Clothing & Accessories</option>
+                    <option class="dropdown-font-size" value="">Collectibles</option>
+                    <option class="dropdown-font-size" value="">Computer & Accessories</option>
+                    <option class="dropdown-font-size" value="">Electronics</option>
+                    <option class="dropdown-font-size" value="">Furniture</option>
+                    <option class="dropdown-font-size" value="">Garden & Outdoor</option>
+                    <option class="dropdown-font-size" value="">Giftcards</option>
+                    <option class="dropdown-font-size" value="">Grocery</option>
+                    <option class="dropdown-font-size" value="">Health</option>
+                    <option class="dropdown-font-size" value="">Home & Kitchen</option>
+                    <option class="dropdown-font-size" value="">Industrial & scientific</option>
+                    <option class="dropdown-font-size" value="">Jewellery</option>
+                    <option class="dropdown-font-size" value="">Kindle Store</option>
+                    <option class="dropdown-font-size" value="">Luggage & Bags</option>
+                    <option class="dropdown-font-size" value="">Luxury Beauty</option>
+                    <option class="dropdown-font-size" value="">Movies & TV shows</option>
+                    <option class="dropdown-font-size" value="">Music</option>
+                </select>
+
+                <input type="text" placeholder="Search Amazon" name="searchinpt" id="search-bar">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass searchicon"></i>
+                </div>
+                
+            </div>
+
+
+            <div class="nav-box-first-four borderonhover">
+                <img src="https://static.vecteezy.com/system/resources/previews/000/532/212/original/vector-united-states-of-america-flag-usa-flag-america-flag-background.jpg" alt="" class="usaflag">
+                <p>EN</p>
+            </div>
+
+
+
+            <div class="nav-box-first-five borderonhover">
+                <p class="hellosignin">Hello,signin</p>
+                <p>Accounts & Lists</p>
+            </div>
+
+
+            <div class="nav-box-first-six borderonhover">
+                <p class="hellosignin">Returns</p>
+                <p>&Orders</p>
+            </div>
+
+
+            <div class="nav-box-first-seven borderonhover">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p>Cart</p>
             </div>
         </div>
 
-        <div class="header-uptofh-two">
-            <input type="search" name="search" id="mbl-search-bar" placeholder="Search Amazon.in">
-            <span class="material-symbols-outlined search-icon-mbl">
-                search
-            </span>
+        <div class="nav-box-second">
+            <div class="nav-box-second-first">
+                    <p class="borderonhover">All</p>
+                    <p class="borderonhover">Medical Care & Pharmacy</p>
+                    <p class="borderonhover">Back to School</p>
+                    <p class="borderonhover">Off to College</p>
+                    <p class="borderonhover">Best Sellers</p>
+                    <p class="borderonhover">Customer Service</p>
+                    <p class="borderonhover">Amazon Basics</p>
+                    <p class="borderonhover">Music</p>
+                    <p class="borderonhover">Prime</p>
+                    <p class="borderonhover">New Releases</p>
+                    <p class="borderonhover">Today's Deals</p>
+                    <p class="borderonhover">Books</p>
+            </div>
+            <div class="nav-box-second-second">
+                <p class="borderonhover">Shop Black Business Month</p>
+            </div>
         </div>
 
-        <div class="header-uptofh-three">
-            <ul>
-                <li class="navs">category</li>
-                <li class="navs">your lists</li>
-                <li class="navs">deals</li>
-                <li class="navs">sell</li>
-            </ul>
-        </div>
-
-        <div class="uptothree320px">
-            Switch to other compaitable devices
-        </div>
+        
+       </nav>
 
     </header>
-    <div class="header-bottom-bar">
-        <div class="header-bottom-bar-left">
-            <div class="navs">
-                <span class="material-symbols-outlined">
-                    menu
-                </span>
-                <span class="menualltxt">all</span>
-            </div>
-            <div class="navs">sell</div>
-            <div class="navs">amazon pay</div>
-            <div class="navs">buy again</div>
-            <div class="navs">amazon miniTV</div>
-            <div class="navs">gift cards</div>
-            <div class="navs">coupons</div>
-            <div class="navs">amazonBasics</div>
-            <div class="navs">browsing history</div>
-            <div class="navs">customer service</div>
-        </div>
-        <div class="header-bottom-bar-right navs">
-            <!-- <img src="https://m.media-amazon.com/images/G/31/AmazonVideo/2021/X-site/SingleTitle/TheGreatIndianFamily/400x39-SWM_NP._CB572974686_.jpg" alt="" class="bottom-bar-img"> -->
-            <img src="https://m.media-amazon.com/images/G/31/Gateway_IN/testing/NewLaunches_400x39._CB593645585_.jpg"
-                alt="" class="bottom-bar-img">
 
-        </div>
-        <div class="header-bottom-bar-below500">
-
-            <div class="deliveryadress">
-                <span class="material-symbols-outlined">
-                    location_on
-                </span>
-                <span class="location-add-margin">
-                    Deliver to MOHAMMAD - Narsampet 506132
-                </span>
-                <span class="material-symbols-outlined">
-                    arrow_drop_down
-                </span>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- header ends here -->
 
     <main>
 
-        <div class="main-one-adv">
+        <div class="main-advertisement">
+            <img class="main-add" src="https://source.unsplash.com/1535x400?clothes" alt="">
+        </div>
 
-            <div class="main-cards-in-adv">
+        <div class="main-cards">
 
-                <div class="cards-main-txt">Keep shopping for</div>
-
-                <div class="flexbox-of-cardincards">
-                    <div class="card-in-cards">
-                        <div class="img-card-in-cards">
-                            <img src="https://m.media-amazon.com/images/I/2110TEYPKnL._MCnd_AC_.jpg" alt="">
-                        </div>
-                        <div class="txt-card-in-cards">audio hedphones</div>
-                    </div>
-                    <div class="card-in-cards">
-                        <div class="img-card-in-cards">
-                            <img src="https://m.media-amazon.com/images/I/41XQP3N-SdL._MCnd_AC_.jpg" alt="">
-                        </div>
-                        <div class="txt-card-in-cards">gaming keyboards</div>
-                    </div>
-                    <div class="card-in-cards">
-                        <div class="img-card-in-cards">
-                            <img src="https://m.media-amazon.com/images/I/31jjrlU4E0L._MCnd_AC_.jpg" alt="">
-                        </div>
-                        <div class="txt-card-in-cards">complete tripod units</div>
-                    </div>
-                    <div class="card-in-cards">
-                        <div class="img-card-in-cards">
-                            <img src="https://m.media-amazon.com/images/I/41eSQvTbsaL._MCnd_AC_.jpg" alt="">
-                        </div>
-                        <div class="txt-card-in-cards">smartphones & basic mobile phones</div>
-                    </div>
-                    
+            <div class="main-card">
+                <div class="main-card-head">
+                    gaming accessories
                 </div>
-
-
-            </div>
-            
-            <div class="main-cards-in-adv">
-
-                <div class="cards-main-txt">pickup where you left off</div>
-
-                <div class="flexbox-of-cardincards">
-                    <div class="card-in-cards">
-                        <div class="img-card-in-cards">
-                            <img src="https://m.media-amazon.com/images/I/813SshIMhfL._AC_SY110_.jpg" alt="">
-                        </div>
-                        <div class="txt-card-in-cards">zebronics war gaming</div>
-                    </div>
-                    <div class="card-in-cards">
-                        <div class="img-card-in-cards">
-                            <img src="https://m.media-amazon.com/images/I/71y-CU36kSL._AC_SY110_.jpg" alt="">
-                        </div>
-                        <div class="txt-card-in-cards">redgear MT02 keyboard</div>
-                    </div>
-                    <div class="card-in-cards">
-                        <div class="img-card-in-cards">
-                            <img src="https://m.media-amazon.com/images/I/71Fu1MbuFXL._AC_SY110_.jpg" alt="">
-                        </div>
-                        <div class="txt-card-in-cards">zebronics newly launched</div>
-                    </div>
-                    <div class="card-in-cards">
-                        <div class="img-card-in-cards">
-                            <img src="https://m.media-amazon.com/images/I/61J6WIk55aL._AC_SY110_.jpg" alt="">
-                        </div>
-                        <div class="txt-card-in-cards">amazon basics wired keyboard</div>
-                    </div>
-                    
+                <img src="https://source.unsplash.com/150x150?gaming-accessories" alt="" class="main-card-image">
+                <div class="main-card-anchortag">
+                    See more
                 </div>
-
-
             </div>
 
-            <div class="main-cards-in-adv">
-
-                <div class="cards-main-txt">Deals inspired by your recent history</div>
-
-                <div class="flexbox-of-cardincards">
-                    <div class="card-in-cards">
-                        <div class="img-card-in-cards">
-                            <img src="https://m.media-amazon.com/images/I/71O7BvBJc8L._AC_SY145_.jpg" alt="">
-                        </div>
-                        <div class="txt-card-in-cards deal">
-                            <div class="red-bg-deal">28% off</div> deal
-                        </div>
-                    </div>
-                    <div class="card-in-cards">
-                        <div class="img-card-in-cards">
-                            <img src="https://m.media-amazon.com/images/I/71c0GSxtEEL._AC_SY145_.jpg" alt="">
-                        </div>
-                        <div class="txt-card-in-cards deal">
-                            <div class="red-bg-deal">22% off</div> deal
-                        </div>
-                    </div>
-                    <div class="card-in-cards">
-                        <div class="img-card-in-cards">
-                            <img src="https://m.media-amazon.com/images/I/714HajEtOIL._AC_SY145_.jpg" alt="">
-                        </div>
-                        <div class="txt-card-in-cards deal">
-                            <div class="red-bg-deal">28% off</div> deal
-                        </div>
-                    </div>
-                    <div class="card-in-cards">
-                        <div class="img-card-in-cards">
-                            <img src="https://m.media-amazon.com/images/I/512Od6uX36L._AC_SY145_.jpg" alt="">
-                        </div>
-                        <div class="txt-card-in-cards deal">
-                            <div class="red-bg-deal">4  8% off</div> deal
-                        </div>
-                    </div>
-                    
-                    
+            <div class="main-card">
+                <div class="main-card-head">
+                    toys under $30
                 </div>
-
-
+                <img src="https://source.unsplash.com/150x150?toys" alt="" class="main-card-image">
+                <div class="main-card-anchortag">
+                    shop now
+                </div>
             </div>
-
-            <div class="main-cards-in-adv-twocards">
-                    <div class="topcard">
-                        <div class="texts">
-                            <div class="textone">Become an Amazon Seller</div>
-                            <div class="texttwo">Become a Seller</div>
-                        </div>
-                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/amazonservices/landing/ATF-imagery-card-v2-50._CB574596957_.jpg" alt="">
-                    </div>
-                    <div class="bottomcard">
-                        <img src="https://m.media-amazon.com/images/I/41bPoHAeKWL._SX300_SY300_QL70_FMwebp_.jpg" alt="">
-                        <div class="details">Acer Aspire 3 (Intel Core i3 1215U Processor/ 8GB/ 512 GB SSD/Windows 11 Home/MS Office) A315-59 with 39.6 cm (15.6") Full HD Display /1.78kg</div>
-                        <div class="price">&#x20b9 33499</div>
-                    </div>
+            <div class="main-card">
+                <div class="main-card-head">
+                    home and kitchen under $30
+                </div>
+                <img src="https://source.unsplash.com/150x150?kitchen" alt="" class="main-card-image">
+                <div class="main-card-anchortag">
+                    shop now
+                </div>
+            </div>
+            <div class="main-card">
+                <div class="main-card-head">
+                    health and personal care
+                </div>
+                <img src="https://source.unsplash.com/150x150?health" alt="" class="main-card-image">
+                <div class="main-card-anchortag">
+                    shop now
+                </div>
+            </div>
+            <div class="main-card">
+                <div class="main-card-head">
+                    electronics
+                </div>
+                <img src="https://source.unsplash.com/150x150?electronics" alt="" class="main-card-image">
+                <div class="main-card-anchortag">
+                    shop now
+                </div>
+            </div>
+            <div class="main-card">
+                <div class="main-card-head">
+                    beauty picks
+                </div>
+                <img src="https://source.unsplash.com/150x150?beauty" alt="" class="main-card-image">
+                <div class="main-card-anchortag">
+                    shop now
+                </div>
+            </div>
+            <div class="main-card">
+                <div class="main-card-head">
+                    fashion
+                </div>
+                <img src="https://source.unsplash.com/150x150?fashion" alt="" class="main-card-image">
+                <div class="main-card-anchortag">
+                    shop now
+                </div>
+            </div>
+            <div class="main-card">
+                <div class="main-card-head">
+                    gadgets
+                </div>
+                <img src="https://source.unsplash.com/150x150?gadgets" alt="" class="main-card-image">
+                <div class="main-card-anchortag">
+                    shop now
+                </div>
             </div>
         </div>
 
+        <div class="main-horizantal-card">
+            <div class="main-card-head">
+                frequently purchased in home
+            </div>
+            <div class="main-horizantal-card-images">
+                <img src="https://source.unsplash.com/250x250?home" alt="" class="horizantal-card-image">
+            <img src="https://source.unsplash.com/250x250?decor" alt="" class="horizantal-card-image">
+            <img src="https://source.unsplash.com/250x250?utensils" alt="" class="horizantal-card-image">
+            <img src="https://source.unsplash.com/250x250?kitchen" alt="" class="horizantal-card-image">
+            <img src="https://source.unsplash.com/250x250?spoon" alt="" class="horizantal-card-image">
+            <img src="https://source.unsplash.com/250x250?cups" alt="" class="horizantal-card-image">
+            <img src="https://source.unsplash.com/250x250?kettle" alt="" class="horizantal-card-image">
+            <img src="https://source.unsplash.com/250x250?stove" alt="" class="horizantal-card-image">
+            <img src="https://source.unsplash.com/250x250?taps" alt="" class="horizantal-card-image">
+            </div>
+            
+        </div>
+
+        <div class="main-horizantal-card">
+            <div class="main-card-head">
+                frequently purchased in office
+            </div>
+            <div class="main-horizantal-card-images">
+                <img src="https://source.unsplash.com/250x250?office" alt="" class="horizantal-card-image">
+            <img src="https://source.unsplash.com/250x250?chairs" alt="" class="horizantal-card-image">
+            <img src="https://source.unsplash.com/250x250?camera" alt="" class="horizantal-card-image">
+            <img src="https://source.unsplash.com/250x250?tables" alt="" class="horizantal-card-image">
+            <img src="https://source.unsplash.com/250x250?monitor" alt="" class="horizantal-card-image">
+            <img src="https://source.unsplash.com/250x250?wifi" alt="" class="horizantal-card-image">
+            <img src="https://source.unsplash.com/250x250?laptops" alt="" class="horizantal-card-image">
+            <img src="https://source.unsplash.com/250x250?cpu" alt="" class="horizantal-card-image">
+            <img src="https://source.unsplash.com/250x250?paintings" alt="" class="horizantal-card-image">
+            </div>
+            
+        </div>
+
+        <div class="main-cards">
+
+            <div class="main-card">
+                <div class="main-card-head">
+                    monitors
+                </div>
+                <img src="https://source.unsplash.com/150x150?monitor" alt="" class="main-card-image">
+                <div class="main-card-anchortag">
+                    See more
+                </div>
+            </div>
+
+            <div class="main-card">
+                <div class="main-card-head">
+                    laptops
+                </div>
+                <img src="https://source.unsplash.com/150x150?laptops" alt="" class="main-card-image">
+                <div class="main-card-anchortag">
+                    shop now
+                </div>
+            </div>
+            <div class="main-card">
+                <div class="main-card-head">
+                    gadgets
+                </div>
+                <img src="https://source.unsplash.com/150x150?gadget" alt="" class="main-card-image">
+                <div class="main-card-anchortag">
+                    shop now
+                </div>
+            </div>
+            <div class="main-card">
+                <div class="main-card-head">
+                    iphone
+                </div>
+                <img src="https://source.unsplash.com/150x150?iphone" alt="" class="main-card-image">
+                <div class="main-card-anchortag">
+                    shop now
+                </div>
+            </div>
+            <div class="main-card">
+                <div class="main-card-head">
+                    televisions
+                </div>
+                <img src="https://source.unsplash.com/150x150?television" alt="" class="main-card-image">
+                <div class="main-card-anchortag">
+                    shop now
+                </div>
+            </div>
+            <div class="main-card">
+                <div class="main-card-head">
+                    power banks
+                </div>
+                <img src="https://source.unsplash.com/150x150?
+                powerbank" alt="" class="main-card-image">
+                <div class="main-card-anchortag">
+                    shop now
+                </div>
+            </div>
+            <div class="main-card">
+                <div class="main-card-head">
+                    wireless earphones
+                </div>
+                <img src="https://source.unsplash.com/150x150?bluetooth" alt="" class="main-card-image">
+                <div class="main-card-anchortag">
+                    shop now
+                </div>
+            </div>
+            <div class="main-card">
+                <div class="main-card-head">
+                    keyboards
+                </div>
+                <img src="https://source.unsplash.com/150x150?keyboard" alt="" class="main-card-image">
+                <div class="main-card-anchortag">
+                    shop now
+                </div>
+            </div>
+        </div>
+        
+
     </main>
+
+    <footer>
+
+
+
+        <div class="foot-one">
+
+            <div class="backtotop-btn">
+                back to top
+            </div>
+
+        </div>
+
+
+
+        <div class="foot-two">
+
+        </div>
+
+
+
+        <div class="foot-three">
+            
+        </div>
+
+
+    </footer>
 
 
 </body>
-
 </html>
