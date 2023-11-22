@@ -1,5 +1,6 @@
 :root {
     --lghtwhiteclr-color: #e2e5e5;
+    --cardwhiteclr-color: #ffffff;
 }
 
 body {
@@ -25,7 +26,7 @@ main {
     padding-top: calc(44vw - 26vw);
     overflow: hidden;
     transition: all 0.5s ease;
-
+    border-radius: 0 0 6px 6px;
 }
 
 .main-cards-in-adv {
@@ -179,8 +180,65 @@ main {
     display: none;
 }
 
+.main-two {
+    width: 100%;
+    height: 27vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    user-select: none;
+}
 
-            
+.main-two-cards {
+    background: var(--cardwhiteclr-color);
+    height: 24.6vw;
+    width: 22.5vw;
+}
+
+.videocard {
+    width: 46.8vw;
+    background-image: url(https://m.media-amazon.com/images/S/pv-target-images/ac63679c33fafc6d4c2219ba18b74a277fd552f2485b50e5554c5a90fff70d9b._AC_SL792_.jpg);
+    /* background-image: url(https://m.media-amazon.com/images/S/pv-target-images/10d67472de72b34d41a29792766d409c0df8371a254906e73b7ef0a97941c472._AC_SL792_.jpg); */
+    background-size: cover;
+    background-color: var(--cardwhiteclr-color);
+    box-shadow: 0.1px 0.1px 5px black;
+}
+.videocard-txt {
+    margin: 0.5vw;
+    display: flex;
+    align-items: center;
+    font-size: 1.4vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 550;
+    height: 2vw;
+    color: black;
+    box-shadow: 0.1px 0.1px 5px rgba(0, 0, 0, 0.437);
+    background: rgba(255, 255, 255, 0.16);
+    padding-left: 1vw;
+}
+
+.video-bottomtxt {
+    background: red;
+    margin-top: 20vw;
+    height: 1.5vw;
+    width: 14vw;
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.16);
+    box-shadow: 0.1px 0.1px 5px rgba(0, 0, 0, 0.437);
+    padding-left: 1vw;
+    font-size: 0.9vw;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 1vw;
+}
+.video-bottomtxt a{
+    color: black;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
 @media screen and (min-width:280px) and (max-width:500px) {
     main {
         width: 100vw;
@@ -221,7 +279,7 @@ main {
         background: white;
         border-radius: 4px;
         white-space: nowrap;
-
+        box-shadow: -0.2px 0 5px rgba(0, 0, 0, 0.167);
     }
 
     .upto650-containers-txt {
@@ -249,7 +307,23 @@ main {
         align-items: center;
         overflow: hidden;
     }
-
+    .main-two{
+        flex-wrap: wrap;
+        height: auto;
+        padding: 3vw 0;
+    }
+    .main-two-cards:nth-child(1){
+        width: 96vw;
+        height: 50vw;
+    }
+    .main-two-cards{
+        height: 100vw;
+        width: 100vw;
+        margin:1vw 2vw;
+    }
+    .video-bottomtxt{
+        margin: 45vw 0 0 0.5vw;
+    }
 }
 
 @media screen and (min-width:1850px) {
