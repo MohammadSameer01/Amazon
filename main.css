@@ -21,10 +21,10 @@ main {
     display: flex;
     box-sizing: border-box;
     padding: 0 0.5vw 0.5vw 0.5vw;
-    animation: bgimg 42s steps(1) infinite;
+    animation: bgimg 40s steps(1) infinite;
     padding-top: calc(44vw - 26vw);
     overflow: hidden;
-    transition: all 0.8s ease;
+    transition: all 0.5s ease;
 
 }
 
@@ -65,32 +65,35 @@ main {
     margin: 1px;
     overflow: hidden;
 }
-.img-card-in-cards{
+
+.img-card-in-cards {
     display: flex;
-    justify-content: center ;
+    justify-content: center;
     margin: auto;
     overflow: hidden;
     height: 60%;
 }
-.txt-card-in-cards{
+
+.txt-card-in-cards {
     width: 100%;
     height: 20%;
     font-family: Arial, Helvetica, sans-serif;
     text-transform: capitalize;
     font-size: 0.9vw;
     display: flex;
-    overflow:hidden;
+    overflow: hidden;
     padding: 0 15px;
     /* background-color: red; */
     display: flex;
     align-items: center;
 }
 
-.deal{
+.deal {
     color: red;
-    font-weight: 600  ;
+    font-weight: 600;
 }
-.red-bg-deal{
+
+.red-bg-deal {
     background-color: #cc0c39;
     height: 75%;
     width: 4vw;
@@ -101,16 +104,18 @@ main {
     margin-right: 4px;
     font-size: 0.75vw;
     border-radius: 3px;
-    font-family: Arial, Helvetica, sans-serif   ;
+    font-family: Arial, Helvetica, sans-serif;
 }
-.main-cards-in-adv-twocards{
+
+.main-cards-in-adv-twocards {
     /* background-color: white; */
     height: 25.2vw;
     width: 22.5vw;
     overflow: hidden;
     margin: 0 1vw;
 }
-.topcard{
+
+.topcard {
     width: 24.6vw;
     height: 9vw;
     background-color: white;
@@ -118,36 +123,42 @@ main {
     display: flex;
     overflow: hidden;
 }
-.topcard .texts .textone{
+
+.topcard .texts .textone {
     width: 12vw;
     height: 28%;
     font-size: 1.7vw;
     padding: 1vw 0.5vw;
     font-family: Arial, Helvetica, sans-serif;
 }
-.topcard .texts .texttwo{
+
+.topcard .texts .texttwo {
     color: blue;
     height: 40%;
     padding: 1vw 0.5vw;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.9vw ;
+    font-size: 0.9vw;
 }
-.topcard img{
+
+.topcard img {
     margin-top: 10px;
     height: 85%;
 }
-.bottomcard{
+
+.bottomcard {
     margin-top: 1.5vw;
     width: 24.6vw;
     height: 14.7vw;
     background-color: white;
     box-shadow: 0.1px 0.1px 8px rgba(0, 0, 0, 0.434);
 }
-.bottomcard img{
+
+.bottomcard img {
     width: 10vw;
     padding-left: 5.5vw;
 }
-.bottomcard .details{
+
+.bottomcard .details {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.8vw;
     height: 1.9vw;
@@ -155,7 +166,8 @@ main {
     width: 20vw;
     margin: 0 10px;
 }
-.bottomcard .price{
+
+.bottomcard .price {
     color: red;
     font-size: 1.2vw;
     font-family: Arial, Helvetica, sans-serif;
@@ -163,26 +175,80 @@ main {
     margin: 0.6vw 1vw;
 }
 
+.main-one-upto650 {
+    display: none;
+}
 
-@media screen and (min-width:280px) and (max-width:650px) {
+
+
+@media screen and (min-width:280px) and (max-width:500px) {
     main {
         width: 100vw;
         overflow: hidden;
     }
 
     .main-one-adv {
-        height: 45vw;
-        background-size: 150vw;
-        scale: 100%;
-
+        height: 55vw;
+        background-repeat: no-repeat;
+        background-size: 175vw;
     }
 
     .main-cards-in-adv {
         visibility: hidden;
     }
-    .main-cards-in-adv-twocards{
+
+    .main-cards-in-adv-twocards {
         visibility: hidden;
     }
+
+    .main-one-upto650 {
+        height: 48vw;
+        width: 100vw;
+        display: flex;
+        white-space: nowrap;
+        padding: 2px 2px;
+        overflow-x: scroll;
+        background-color: var(--lghtwhiteclr-color);
+        animation: bgimg 40s steps(1) infinite;
+        background-position: 0 100%;
+        transition: all 0.5s ease;
+    }
+
+    .main-one-upto650-containers {
+        width: 42vw;
+        height: 98%;
+        margin: 1px 1vw;
+        background: white;
+        border-radius: 4px;
+        white-space: nowrap;
+
+    }
+
+    .upto650-containers-txt {
+        height: 6vw;
+        text-transform: capitalize;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 4.2vw;
+        padding: 2vw 2vw;
+        width: 100vw;
+        font-weight: 550;
+        overflow: hidden;
+    }
+
+    .main-one-upto650-containers img {
+        width: 90%;
+        display: flex;
+        margin: auto;
+        padding: 2vw;
+    }
+
+    .imagecenter {
+        height: 75%;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+    }
+
 }
 
 @media screen and (min-width:1850px) {
@@ -201,16 +267,15 @@ main {
 
 @keyframes bgimg {
     0% {
-        background-image:url(https://images-eu.ssl-images-amazon.com/images/G/31/img23/Wireless/OnePlus/Flagship/115G/Nov14/D66357764_WLD_OnePlus_Salami_NewLaunch_DesktopTallHero_3000x1200._CB572590834_.jpg);
+        background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img23/Wireless/OnePlus/Flagship/115G/Nov14/D66357764_WLD_OnePlus_Salami_NewLaunch_DesktopTallHero_3000x1200._CB572590834_.jpg);
 
         /* background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img23/Wireless/Samsung/SamsungM/M34-5G/16thNov/D85723568_INWLD-WLD-Samsung-M34-NewLaunch_tallhero_1500x600._CB572949606_.jpg); */
 
         /* background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img2020/fashion/WA_2020/weddinghero22/New/Men_-_wedding_store_-_Kurtasets_juttis_3000x1200._CB573501837_.jpg); */
     }
+
     20% {
         background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img21/Wireless/Madhav/November/Apple/Airtel/D103479793_WLD-BAU-iPhone_15_Series_DesktopTallHero_3000x1200._CB572594490_.jpg);
-
-        /* background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img23/Fashion/GW/MFD/Nov/AF-Rec-PC-3000._CB572789401_.jpg); */
 
         background-image: url(https://m.media-amazon.com/images/I/81oEA+yqnRL._SX3000_.jpg);
     }
@@ -218,11 +283,14 @@ main {
     40% {
         /* background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/prime/ACQ/Hero_3000x12001._CB592142345_.jpg); */
 
-        background-image: url(https://m.media-amazon.com/images/I/81rhhoK+MEL._SX3000_.jpg);
+        background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img21/Wireless/Madhav/November/Apple/Airtel/D103479793_WLD-BAU-iPhone_15_Series_DesktopTallHero_3000x1200._CB572594490_.jpg);
+
+        /* background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img23/Fashion/GW/MFD/Nov/AF-Rec-PC-3000._CB572789401_.jpg); */
+
     }
 
     60% {
-        /* background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/Symbol/2023/GWHeros/Nov/PC_3000_1_1._CB574451900_.jpg); */
+        background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/Symbol/2023/GWHeros/Nov/PC_3000_1_1._CB574451900_.jpg);
 
         background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img23/PB/Nov/BAU/Gateway/ATF/PC_Category_DESKTOP_Hero_3000x1200._CB573222572_.jpg);
     }
@@ -230,7 +298,8 @@ main {
     80% {
         background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/amazonservices/landing/desk._CB572880902_.jpg);
 
-        /* background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img23/Softlines_JWL_SH_GW_Assets/Nov/Shoes/MFD/MEN_Boots/Frame_172_3000pc._CB573014305_.jpg); */
+        background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/Symbol/2023/GWHeros/Nov/PC_3000_1_1._CB574451900_.jpg);
+
     }
 
     90% {
