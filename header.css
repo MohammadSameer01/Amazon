@@ -198,6 +198,32 @@ select option {
     align-items: center;
 }
 
+.adtnl-mbl-navbar{
+    height: 24vw;
+    width: 100vw;
+    display: flex;
+    overflow-x: scroll;
+    align-items: center;
+    background-color: var(--whitecolor-color);
+}
+.adtnl-navs{
+    height:80%;
+    width: 40vw;
+    background-color: var(--whitecolor-color);
+    margin: 1px 1px;
+    padding: 1vw 3vw;
+    
+}
+.adtnl-navs img{
+    height: 60%;
+}
+.adtnl-mbl-navbar-txt{
+    margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    font-size: 3.2vw;
+    text-align: center;
+}
 
 
 
@@ -540,6 +566,9 @@ select option {
     .header-bottom-bar-below500 {
         display: none;
     }
+    .adtnl-mbl-navbar{
+        display: none;
+    }
 }
 
 
@@ -704,6 +733,7 @@ select option {
         display: flex;
         align-items: center;
         padding: 0 10px;
+        font-weight: 400;
     }
 
 }
