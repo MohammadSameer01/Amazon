@@ -277,6 +277,8 @@ main {
         height: 55vw;
         background-repeat: no-repeat;
         background-size: 175vw;
+        border-radius: 0;
+
     }
 
     .main-cards-in-adv {
