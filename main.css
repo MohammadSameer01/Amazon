@@ -10,8 +10,7 @@ body {
 main {
     width: 97.5vw;
     margin: auto;
-    height: 200vh;
-
+    height: 300vh;
 }
 
 .main-one-adv {
@@ -194,6 +193,7 @@ main {
     background: var(--cardwhiteclr-color);
     height: 24.6vw;
     width: 22.5vw;
+    overflow: hidden;
 }
 
 .videocard {
@@ -246,10 +246,10 @@ main {
     height: 100%;
     display: flex;
     align-items: center;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.videocard video {
+.videocard .video {
     width: 100%;
     margin: 0;
     padding: 0;
@@ -266,6 +266,166 @@ main {
     border-radius: 50%;
     width: 3.35vw;
 }
+
+
+.main-two-cards .main-card-txt {
+    width: 100%;
+    height: 13%;
+    display: flex;
+    align-items: center;
+    padding-left: 1.3vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3vw;
+    font-weight: 550;
+}
+
+.main-two-cards .main-card-4cards {
+    height: 78%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card-in-main4cards {
+    width: 48%;
+    height: 48%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.imageintheinnercard {
+    width: 100%;
+    height: 80%;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+.txtintheinnercard {
+    width: 100%;
+    height: 20%;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    font-size: 0.85vw;
+    font-weight: bold;
+    color: #cc0c39;
+}
+
+.reddealtxt {
+    background-color: #cc0c39;
+    width: 30%;
+    height: 75%;
+    margin-left: 0.8vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--lghtwhiteclr-color);
+    border-radius: 4px;
+    display: inline-flex;
+    margin-right: 0.3vw;
+}
+
+.seealldealsbtn {
+    width: 100%;
+    height: 9%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.88vw;
+    color: #007185;
+    padding-left: 1vw;
+    display: flex;
+    align-items: center;
+}
+
+.seealldealsbtn:hover {
+    color: red;
+}
+
+/* container slider styling starts from here */
+
+.main-three{
+    width: 97%;
+    height: 23vw;
+    background: var(--cardwhiteclr-color);
+    margin: auto;
+    overflow: hidden;
+}
+.main-three-txt{
+    width: 100%;
+    height: 18%;
+    display: flex;
+    align-items: center;
+    padding-left: 1.3vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3vw;
+    font-weight: 550;
+}
+.main-three-containers{
+    height: 82%;
+    width: 100%;
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    box-sizing: border-box;
+
+}
+.main-three-containers-container{
+    height: 100%;
+    width: 21%;
+    margin: 1px;
+    cursor: pointer;
+}
+.container-image{
+    width: 100%;
+    object-fit: contain;
+    height: 70%;
+}
+.textintheinnercontainer{
+    width: 18vw;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    font-size: 0.9vw;
+    font-weight: bold;
+    color: #cc0c39;
+}
+.reddealtxt-incontainer{
+    background-color: #cc0c39;
+    width: 38%;
+    height: 40%;
+    margin-left: 0.8vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.78vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--lghtwhiteclr-color);
+    border-radius: 3px;
+    display: inline-flex;
+    margin-right: 0.3vw;
+    font-weight: normal;
+}
+.seealldealsbtn-incontainer{
+    width: auto;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9vw;
+    color: #007185;
+    display: flex;
+    align-items: center;
+    margin-left: 1vw;
+    font-weight: normal;
+    cursor: pointer;
+
+}
+.seealldealsbtn-incontainer:hover{
+    color: red;
+    text-decoration: underline;
+}
+
 
 @media screen and (min-width:280px) and (max-width:500px) {
     main {
@@ -355,26 +515,29 @@ main {
         width: 100vw;
         margin: 1vw 2vw;
     }
-    .videocard-txt{
+
+    .videocard-txt {
         margin: 0.5vw;
         display: flex;
         align-items: center;
         font-size: 4vw;
         font-family: Arial, Helvetica, sans-serif;
         font-weight: 550;
-        height:6vw;
+        height: 6vw;
         color: black;
         box-shadow: 0.1px 0.1px 5px rgba(0, 0, 0, 0.437);
         padding-left: 1vw;
         /* background: red; */
     }
+
     .video-bottomtxt {
         height: 6vw;
         width: 40vw;
         margin: 39vw 0 0 2vw;
         font-size: 2.7vw;
     }
-    .videocard video {
+
+    .videocard .video {
         width: 100%;
         margin: 0;
         padding: 0;
@@ -383,7 +546,7 @@ main {
         top: -52.5vw;
         z-index: -10;
     }
-    
+
     .videocard img {
         position: relative;
         top: -61.5vw;
@@ -392,6 +555,146 @@ main {
         border-radius: 50%;
         width: 7vw;
     }
+
+    .card-in-main4cards {
+        width: 48%;
+        height: 48%;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    .main-two-cards .main-card-txt {
+        width: 100%;
+        height: 13%;
+        display: flex;
+        align-items: center;
+        padding-left: 3vw;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 5vw;
+        font-weight: 550;
+    }
+    .txtintheinnercard {
+        width: 100%;
+        height: 20%;
+        font-family: Arial, Helvetica, sans-serif;
+        overflow: hidden;
+        font-size: 3vw;
+        font-weight: bold;
+        color: #cc0c39;
+        display: flex;
+        align-items: center;
+    }
+    .reddealtxt {
+        background-color: #cc0c39;
+        width: 30%;
+        height: 75%;
+        margin-left: 0.8vw;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2.5vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--lghtwhiteclr-color);
+        border-radius: 4px;
+        display: inline-flex;
+        margin-right: 1.5vw;
+    }
+    .seealldealsbtn {
+        width: 100%;
+        height: 9%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 3.5vw;
+        color: #007185;
+        padding-left: 2.5vw;
+        display: flex;
+        align-items: center;
+    }
+
+    /* container slider styling starts from here */
+
+    .main-three{
+        width: 97%;
+        height: 90vw;
+        background: var(--cardwhiteclr-color);
+        margin: auto;
+        overflow: hidden;
+    }
+    .main-three-txt{
+        width: 100%;
+        height: 18%;
+        display: flex;
+        align-items: center;
+        padding-left:3vw;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 5vw;
+        font-weight: 550;
+        user-select: none;
+    }
+    .main-three-containers{
+        height: 82%;
+        width: 100%;
+        display: flex;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        box-sizing: border-box;
+    
+    }
+    .main-three-containers-container{
+        height: 100%;
+        width: 100vw;
+        margin: 0 5vw;
+        cursor: pointer;
+        box-sizing: border-box;
+    }
+    .container-image{
+        width: 100%;
+        object-fit: contain;
+        height: 75%;
+    }
+    .textintheinnercontainer{
+        width: 35vw;
+        height: 25%;
+        display: grid;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        overflow: hidden;
+        font-size: 3.4vw;
+        font-weight: bold;
+        color: #cc0c39;
+        user-select: none;
+        justify-content: center;
+    }
+    .reddealtxt-incontainer{
+        background-color: #cc0c39;
+        width: 100%;
+        height: 80%;
+        margin-left: 0.8vw;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2.5vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--lghtwhiteclr-color);
+        border-radius: 10px;
+        display: inline-flex;
+        margin-right: 0.3vw;
+        font-weight: normal;
+        
+    }
+    .seealldealsbtn-incontainer{
+        width: auto;
+        height: auto;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 3vw;
+        color: #007185;
+        display: flex;
+        align-items: center;
+        margin-left: 3vw;
+        font-weight: normal;
+        cursor: pointer;
+        
+    }
+
+
 }
 
 @media screen and (min-width:1850px) {
