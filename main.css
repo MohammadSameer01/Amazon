@@ -1,7 +1,9 @@
 :root {
     --lghtwhiteclr-color: #e2e5e5;
     --cardwhiteclr-color: #ffffff;
+    --txtlightblackclr-color: #000000fc;
 }
+
 body {
     background-color: var(--lghtwhiteclr-color);
 }
@@ -29,17 +31,20 @@ main {
     border-radius: 0 0 6px 6px;
 
 }
-.main-one-adv .main-two-cards{
+
+.main-one-adv .main-two-cards {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.289);
 }
-.main-one-adv .main-two-cards .txtintheinnercard{
+
+.main-one-adv .main-two-cards .txtintheinnercard {
     color: black;
     font-size: 0.9vw;
-    font-weight:normal;
-    font-family:sans-serif;
-    margin:0 0.8vw ;
+    font-weight: normal;
+    font-family: sans-serif;
+    margin: 0 0.8vw;
     width: 85%;
 }
+
 .main-cards-in-adv {
     background-color: white;
     height: 24.6vw;
@@ -217,9 +222,10 @@ main {
     background-color: transparent;
     box-shadow: 0.1px 0.1px 5px black;
     overflow: hidden;
-    background: linear-gradient(180deg,#000,transparent 40%,transparent 85%,#000);
+    background: linear-gradient(180deg, #000, transparent 40%, transparent 85%, #000);
 
 }
+
 .videocard-txt {
     margin: 1vw 0.6vw;
     display: flex;
@@ -261,7 +267,7 @@ main {
     display: flex;
     align-items: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
+
 }
 
 .videocard .video {
@@ -271,7 +277,7 @@ main {
     position: relative;
     top: -24.5vw;
     z-index: -10;
-    
+
 }
 
 .videocard img {
@@ -360,7 +366,7 @@ main {
 
 /* container slider styling starts from here */
 
-.main-three{
+.main-three {
     width: 97%;
     height: 23vw;
     background: var(--cardwhiteclr-color);
@@ -368,7 +374,8 @@ main {
     overflow: hidden;
     margin: 1.4vw auto;
 }
-.main-three-txt{
+
+.main-three-txt {
     width: 100%;
     height: 18%;
     display: flex;
@@ -378,7 +385,8 @@ main {
     font-size: 1.3vw;
     font-weight: 550;
 }
-.main-three-containers{
+
+.main-three-containers {
     height: 82%;
     width: 100%;
     display: flex;
@@ -387,18 +395,21 @@ main {
     box-sizing: border-box;
 
 }
-.main-three-containers-container{
+
+.main-three-containers-container {
     height: 100%;
     width: 21%;
     margin: 1px;
     cursor: pointer;
 }
-.container-image{
+
+.container-image {
     width: 100%;
     object-fit: contain;
     height: 70%;
 }
-.textintheinnercontainer{
+
+.textintheinnercontainer {
     width: 18vw;
     height: 30%;
     display: flex;
@@ -409,7 +420,8 @@ main {
     font-weight: bold;
     color: #cc0c39;
 }
-.reddealtxt-incontainer{
+
+.reddealtxt-incontainer {
     background-color: #cc0c39;
     width: 38%;
     height: 40%;
@@ -425,7 +437,8 @@ main {
     margin-right: 0.3vw;
     font-weight: normal;
 }
-.seealldealsbtn-incontainer{
+
+.seealldealsbtn-incontainer {
     width: auto;
     height: auto;
     font-family: Arial, Helvetica, sans-serif;
@@ -438,30 +451,106 @@ main {
     cursor: pointer;
 
 }
-.seealldealsbtn-incontainer:hover{
+
+.seealldealsbtn-incontainer:hover {
     color: red;
     text-decoration: underline;
 }
-.notxt .container-image{
+
+.notxt .container-image {
     height: 90%;
     width: 15vw;
     margin: 1vw;
 }
-.notxt .textintheinnercontainer{
+
+.notxt .textintheinnercontainer {
     display: none;
 }
-.whitecolortxt .container-image{
-    height: 60%;
+
+.whitecolortxt {
+    height: 30vw;
 }
-.whitecolortxt .textintheinnercontainer{
+
+.whitecolortxt .container-image {
+    height: 65%;
+}
+
+.main-three-containers-container:hover .textintheinnercontainer {
+    color: #007185;
+}
+
+.whitecolortxt .textintheinnercontainer {
     color: black;
-    font-weight: 400;
     font-family: Arial, Helvetica, sans-serif;
-    /* font-family: 'Ubuntu', sans-serif; */
-    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Poppins', sans-serif;
     padding: 1vw 1.3vw;
+    height: 15%;
     overflow: hidden;
     font-size: 0.92vw;
+}
+
+.priceinmainthree {
+    width: 100%;
+    height: 12%;
+    font-family: 'Noto Sans', sans-serif;
+    padding: 0 1.5vw;
+    font-weight: bold;
+    font-size: 1.35vw;
+    color: var(--txtlightblackclr-color);
+
+}
+
+.mrp {
+    font-size: 0.8vw;
+    margin-left: 0.8vw;
+    color: rgba(0, 0, 0, 0.780);
+    text-decoration: line-through;
+}
+
+
+.main-cmn-cards {
+    width: 100%;
+    height: 27vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main-cmn-cardsncard {
+    background: var(--cardwhiteclr-color);
+    height: 25.6vw;
+    width: 22.5vw;
+    overflow: hidden;
+}
+
+.main-cmn-cardsncard .main-card-txt {
+    width: 100%;
+    height: 13%;
+    display: flex;
+    align-items: center;
+    padding-left: 1.3vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3vw;
+    font-weight: 550;
+}
+
+.main-cmn-cards .main-card-4cards {
+    height: 78%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.cmncardtxt{
+    width: 100%;
+    height: 20%;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    font-size: 0.8vw;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    color: var(--txtlightblackclr-color);
 }
 @media screen and (min-width:280px) and (max-width:500px) {
     main {
@@ -479,9 +568,11 @@ main {
     .main-cards-in-adv {
         visibility: hidden;
     }
-    .main-one-adv .main-two-cards{
+
+    .main-one-adv .main-two-cards {
         display: none;
     }
+
     .main-cards-in-adv-twocards {
         visibility: hidden;
     }
@@ -552,6 +643,7 @@ main {
         width: 100vw;
         margin: 1vw 2vw;
     }
+
     .videocard-txt {
         margin: 0.5vw;
         display: flex;
@@ -563,8 +655,9 @@ main {
         color: white;
         box-shadow: 0.1px 0.1px 5px rgba(0, 0, 0, 0.437);
         padding-left: 1vw;
-        background:rgba(0, 0, 0, 0.084)
+        background: rgba(0, 0, 0, 0.084)
     }
+
     .video-bottomtxt {
         height: 6vw;
         width: 40vw;
@@ -597,6 +690,7 @@ main {
         overflow: hidden;
         cursor: pointer;
     }
+
     .main-two-cards .main-card-txt {
         width: 100%;
         height: 13%;
@@ -607,6 +701,7 @@ main {
         font-size: 5vw;
         font-weight: 550;
     }
+
     .txtintheinnercard {
         width: 100%;
         height: 20%;
@@ -618,6 +713,7 @@ main {
         display: flex;
         align-items: center;
     }
+
     .reddealtxt {
         background-color: #cc0c39;
         width: 30%;
@@ -633,6 +729,7 @@ main {
         display: inline-flex;
         margin-right: 1.5vw;
     }
+
     .seealldealsbtn {
         width: 100%;
         height: 9%;
@@ -646,7 +743,7 @@ main {
 
     /* container slider styling starts from here */
 
-    .main-three{
+    .main-three {
         width: 97%;
         height: 70vw;
         background: var(--cardwhiteclr-color);
@@ -654,39 +751,44 @@ main {
         overflow: hidden;
         margin: 4vw auto;
     }
-    .main-three-txt{
+
+    .main-three-txt {
         width: 100%;
         height: 13%;
         display: flex;
         align-items: center;
-        padding-left:3vw;
+        padding-left: 3vw;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 5vw;
         font-weight: 550;
         user-select: none;
     }
-    .main-three-containers{
+
+    .main-three-containers {
         height: 87%;
         width: 100%;
         display: flex;
         overflow-y: hidden;
         overflow-x: scroll;
         box-sizing: border-box;
-    
+
     }
-    .main-three-containers-container{
+
+    .main-three-containers-container {
         height: 100%;
         width: 100vw;
         margin: 0 5vw;
         cursor: pointer;
         box-sizing: border-box;
     }
-    .container-image{
+
+    .container-image {
         width: 100%;
         object-fit: contain;
         height: 75%;
     }
-    .textintheinnercontainer{
+
+    .textintheinnercontainer {
         width: 31vw;
         height: 25%;
         display: grid;
@@ -699,7 +801,8 @@ main {
         user-select: none;
         justify-content: center;
     }
-    .reddealtxt-incontainer{
+
+    .reddealtxt-incontainer {
         background-color: #cc0c39;
         width: 100%;
         height: 80%;
@@ -714,10 +817,10 @@ main {
         display: inline-flex;
         margin-right: 0.3vw;
         font-weight: normal;
-        
+
     }
 
-    .seealldealsbtn-incontainer{
+    .seealldealsbtn-incontainer {
         width: auto;
         height: auto;
         font-family: Arial, Helvetica, sans-serif;
@@ -728,25 +831,85 @@ main {
         margin-left: 3vw;
         font-weight: normal;
         cursor: pointer;
-        
+
     }
-    .notxt .container-image{
+
+    .notxt .container-image {
         height: 90%;
         width: 48vw;
     }
-    .whitecolortxt .container-image{
+
+    .whitecolortxt {
+        height: 125vw;
+    }
+
+    .whitecolortxt .container-image {
         height: 66%;
     }
-    .whitecolortxt .textintheinnercontainer{
+
+    .whitecolortxt .textintheinnercontainer {
         color: black;
-        font-weight: 400;
         font-family: Arial, Helvetica, sans-serif;
-        /* font-family: 'Ubuntu', sans-serif; */
-        /* font-family: 'Raleway', sans-serif; */
-        padding: 0.5vw 0.5vw;
+        font-family: 'Poppins', sans-serif;
+        padding: 0;
         overflow: hidden;
-        font-size: 2.5vw;
+        font-size: 2.8vw;
+        height: 20%;
+        width: 50vw;
     }
+
+    .priceinmainthree {
+        width: 90.3%;
+        height: 12%;
+        font-family: 'Noto Sans', sans-serif;
+        padding: 0 1.5vw;
+        font-weight: bold;
+        font-size: 4.8vw;
+        color: var(--txtlightblackclr-color);
+        display: grid;
+    }
+
+    .mrp {
+        font-size: 2.6vw;
+        margin-left: 0.8vw;
+        color: rgba(0, 0, 0, 0.780);
+        text-decoration: line-through;
+    }
+
+    .main-cmn-cards {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 3vw 0;
+    }
+
+    .main-cmn-cardsncard {
+        height: 100vw;
+        width: 100vw;
+        margin: 1vw 2vw;
+    }
+
+    .main-cmn-cards .main-card-txt {
+        width: 100%;
+        height: 13%;
+        display: flex;
+        align-items: center;
+        padding-left: 3vw;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 5vw;
+        font-weight: 550;
+    }
+
+    .main-cmn-cards .main-card-4cards {
+        height: 78%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .cmncardtxt{
+        font-size: 3vw;
+    }
+
 }
 
 @media screen and (min-width:1850px) {
@@ -756,10 +919,11 @@ main {
     }
 
     .main-one-adv {
-        height:18vw;
+        height: 18vw;
         background-size: cover;
         /* background-position: center; */
     }
+
     .main-cards-in-adv {
         visibility: hidden;
     }
@@ -781,7 +945,7 @@ main {
         justify-content: space-evenly;
         user-select: none;
     }
-    
+
     .main-two-cards {
         background: var(--cardwhiteclr-color);
         height: 28vw;
@@ -790,9 +954,11 @@ main {
         /* background: red; */
 
     }
-    .main-one-adv .main-two-cards{
+
+    .main-one-adv .main-two-cards {
         display: none;
     }
+
     .videocard {
         width: 46.8vw;
         /* background-image: url(https://m.media-amazon.com/images/S/pv-target-images/ac63679c33fafc6d4c2219ba18b74a277fd552f2485b50e5554c5a90fff70d9b._AC_SL792_.jpg);  */
@@ -804,7 +970,7 @@ main {
         overflow: hidden;
         display: none;
     }
-    
+
     .videocard-txt {
         margin: 0.5vw;
         display: flex;
@@ -816,9 +982,9 @@ main {
         color: black;
         box-shadow: 0.1px 0.1px 5px rgba(0, 0, 0, 0.437);
         padding-left: 1vw;
-    
+
     }
-    
+
     .video-bottomtxt {
         margin-top: 19.5vw;
         height: 2vw;
@@ -835,7 +1001,7 @@ main {
         margin-left: 0.5vw;
         background: #00A8E1;
     }
-    
+
     .video-bottomtxt a {
         color: white;
         letter-spacing: 0.02vw;
@@ -846,7 +1012,7 @@ main {
         align-items: center;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
-    
+
     .videocard .video {
         width: 100%;
         margin: 0;
@@ -855,7 +1021,7 @@ main {
         top: -24.5vw;
         z-index: -10;
     }
-    
+
     .videocard img {
         position: relative;
         top: -30.5vw;
@@ -864,8 +1030,8 @@ main {
         border-radius: 50%;
         width: 3.35vw;
     }
-    
-    
+
+
     .main-two-cards .main-card-txt {
         width: 100%;
         height: 13%;
@@ -876,7 +1042,7 @@ main {
         font-size: 1.3vw;
         font-weight: 550;
     }
-    
+
     .main-two-cards .main-card-4cards {
         height: 78%;
         display: flex;
@@ -884,14 +1050,14 @@ main {
         justify-content: space-evenly;
         align-items: center;
     }
-    
+
     .card-in-main4cards {
         width: 48%;
         height: 48%;
         overflow: hidden;
         cursor: pointer;
     }
-    
+
     .imageintheinnercard {
         width: 50%;
         height: 80%;
@@ -899,7 +1065,7 @@ main {
         overflow: hidden;
         margin-left: 25%;
     }
-    
+
     .txtintheinnercard {
         width: 100%;
         height: 20%;
@@ -909,7 +1075,7 @@ main {
         font-weight: bold;
         color: #cc0c39;
     }
-    
+
     .reddealtxt {
         background-color: #cc0c39;
         width: 30%;
@@ -925,7 +1091,7 @@ main {
         display: inline-flex;
         margin-right: 0.3vw;
     }
-    
+
     .seealldealsbtn {
         width: 100%;
         height: 9%;
@@ -936,21 +1102,22 @@ main {
         display: flex;
         align-items: center;
     }
-    
+
     .seealldealsbtn:hover {
         color: red;
     }
-    
+
     /* container slider styling starts from here */
-    
-    .main-three{
+
+    .main-three {
         width: 98.7%;
         height: 25vw;
         background: var(--cardwhiteclr-color);
         margin: auto;
         overflow: hidden;
     }
-    .main-three-txt{
+
+    .main-three-txt {
         width: 100%;
         height: 18%;
         display: flex;
@@ -960,7 +1127,8 @@ main {
         font-size: 1.3vw;
         font-weight: 550;
     }
-    .main-three-containers{
+
+    .main-three-containers {
         height: 82%;
         width: 94%;
         display: flex;
@@ -968,22 +1136,25 @@ main {
         overflow-x: scroll;
         box-sizing: border-box;
         margin-left: 3%;
-    
+
     }
-    .main-three-containers-container{
+
+    .main-three-containers-container {
         height: 100%;
         width: 21%;
         margin: 1px 0.33vw;
         cursor: pointer;
     }
-    .container-image{
+
+    .container-image {
         width: 100%;
         object-fit: contain;
         height: 70%;
         width: 75%;
         margin-left: 15%;
     }
-    .textintheinnercontainer{
+
+    .textintheinnercontainer {
         width: 18vw;
         height: 25%;
         display: flex;
@@ -997,7 +1168,8 @@ main {
         /* background: red; */
         padding-left: 1vw;
     }
-    .reddealtxt-incontainer{
+
+    .reddealtxt-incontainer {
         background-color: #cc0c39;
         width: 30%;
         height: 65%;
@@ -1013,7 +1185,8 @@ main {
         margin-right: 0.3vw;
         font-weight: normal;
     }
-    .seealldealsbtn-incontainer{
+
+    .seealldealsbtn-incontainer {
         width: auto;
         height: auto;
         font-family: Arial, Helvetica, sans-serif;
@@ -1024,21 +1197,25 @@ main {
         margin-left: 1vw;
         font-weight: normal;
         cursor: pointer;
-    
+
     }
-    .seealldealsbtn-incontainer:hover{
+
+    .seealldealsbtn-incontainer:hover {
         color: red;
         text-decoration: underline;
     }
-    .whitecolortxt .main-three-containers .main-three-containers-container{
+
+    .whitecolortxt .main-three-containers .main-three-containers-container {
         margin: auto 1vw auto auto;
         width: 15vw;
 
     }
-    .whitecolortxt .container-image{
+
+    .whitecolortxt .container-image {
         height: 66%;
     }
-    .whitecolortxt .textintheinnercontainer{
+
+    .whitecolortxt .textintheinnercontainer {
         color: black;
         font-weight: 400;
         font-family: Arial, Helvetica, sans-serif;
