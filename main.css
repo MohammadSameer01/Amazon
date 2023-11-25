@@ -11,7 +11,6 @@ body {
 main {
     width: 97.5vw;
     margin: auto;
-    height: 1000vh;
 }
 
 .main-one-adv {
@@ -358,6 +357,7 @@ main {
     padding-left: 1vw;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .seealldealsbtn:hover {
@@ -475,10 +475,6 @@ main {
     height: 65%;
 }
 
-.main-three-containers-container:hover .textintheinnercontainer {
-    color: #007185;
-}
-
 .whitecolortxt .textintheinnercontainer {
     color: black;
     font-family: Arial, Helvetica, sans-serif;
@@ -552,10 +548,21 @@ main {
     color: black;
     color: var(--txtlightblackclr-color);
 }
+
+.maininmbl{
+    display: none;
+}
+
+
+
+
+
+
 @media screen and (min-width:280px) and (max-width:500px) {
     main {
         width: 100vw;
         overflow: hidden;
+        user-select: none;
     }
 
     .main-one-adv {
@@ -563,6 +570,7 @@ main {
         background-repeat: no-repeat;
         background-size: 175vw;
         border-radius: 0;
+        display: none;
     }
 
     .main-cards-in-adv {
@@ -606,7 +614,7 @@ main {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 4.2vw;
         padding: 2vw 2vw;
-        width: 100vw;
+        width: 40vw;
         font-weight: 550;
         overflow: hidden;
         user-select: none;
@@ -629,7 +637,7 @@ main {
     .main-two {
         flex-wrap: wrap;
         height: auto;
-        padding: 3vw 0;
+        padding: 1vw 0;
     }
 
     .main-two-cards:nth-child(1) {
@@ -740,7 +748,6 @@ main {
         display: flex;
         align-items: center;
     }
-
     /* container slider styling starts from here */
 
     .main-three {
@@ -749,7 +756,7 @@ main {
         background: var(--cardwhiteclr-color);
         margin: auto;
         overflow: hidden;
-        margin: 4vw auto;
+        margin: 1vw auto;
     }
 
     .main-three-txt {
@@ -879,7 +886,8 @@ main {
     .main-cmn-cards {
         flex-wrap: wrap;
         height: auto;
-        padding: 3vw 0;
+        /* padding: 3vw 0; */
+        padding: 0;
     }
 
     .main-cmn-cardsncard {
@@ -908,6 +916,18 @@ main {
     }
     .cmncardtxt{
         font-size: 3vw;
+    }
+
+
+    .maininmbl{
+        height: 70vw;
+        background: red;
+        width: 100vw;
+        display: flex;
+        animation: bgimgmbl 30s steps(1) infinite;
+        background-size: cover;
+        display: flex;
+        align-items: last baseline;
     }
 
 }
@@ -1258,9 +1278,11 @@ main {
     }
 
     80% {
-        background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/amazonservices/landing/desk._CB572880902_.jpg);
+        /* background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/amazonservices/landing/desk._CB572880902_.jpg); */
 
-        background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/Symbol/2023/GWHeros/Nov/PC_3000_1_1._CB574451900_.jpg);
+        /* background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/Symbol/2023/GWHeros/Nov/PC_3000_1_1._CB574451900_.jpg); */
+
+        background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img23/Softlines_JWL_SH_GW_Assets/Nov/Shoes/MFD/MEN_Boots/Frame_172_3000pc._CB573014305_.jpg);
 
     }
 
@@ -1268,6 +1290,33 @@ main {
         background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img2020/img21/apparelGW/nov23atf/mfd/rec/EYE_PC3000._CB572909746_.jpg);
 
         /* background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img23/Softlines_JWL_SH_GW_Assets/Nov/Shoes/MFD/MEN_Boots/Frame_172_3000pc._CB573014305_.jpg); */
+    }
+
+}
+@keyframes bgimgmbl {
+    0% {
+        background-image: url(https://m.media-amazon.com/images/I/61gb0by1JJL._SR1236,1080_.jpg);
+    }
+
+    20% {
+        background-image: url(https://m.media-amazon.com/images/I/61dJfEWog5L._SR1236,1080_.jpg);
+    }
+
+    40% {
+        background-image: url(https://m.media-amazon.com/images/I/71bMQBcHlXL._SR1236,1080_.jpg);
+    }
+
+    60% {
+        background-image: url(https://m.media-amazon.com/images/I/617+J4-+v8L._SR1236,1080_.jpg);
+    }
+
+    75% {
+        background-image: url(https://m.media-amazon.com/images/I/616+dA0LtZL._SR1236,1080_.jpg);
+
+    }
+
+    80%{
+       background-image: url(https://m.media-amazon.com/images/I/61tq5nR8JFL._SR1236,1080_.jpg);
     }
 
 }
