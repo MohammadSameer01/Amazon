@@ -556,8 +556,6 @@ main {
 
 
 
-
-
 @media screen and (min-width:280px) and (max-width:500px) {
     main {
         width: 100vw;
@@ -651,7 +649,9 @@ main {
         width: 100vw;
         margin: 1vw 2vw;
     }
-
+    .videocard{
+        order: 1;
+    }
     .videocard-txt {
         margin: 0.5vw;
         display: flex;
@@ -921,10 +921,11 @@ main {
 
     .maininmbl{
         height: 70vw;
-        background: red;
+        background: var(--lghtwhiteclr-color);
+        background: #adc2dc;
         width: 100vw;
         display: flex;
-        animation: bgimgmbl 30s steps(1) infinite;
+        animation: bgimgmbl 42s steps(1) infinite;
         background-size: cover;
         display: flex;
         align-items: last baseline;
@@ -1254,12 +1255,16 @@ main {
         /* background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img23/Wireless/Samsung/SamsungM/M34-5G/16thNov/D85723568_INWLD-WLD-Samsung-M34-NewLaunch_tallhero_1500x600._CB572949606_.jpg); */
 
         /* background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img2020/fashion/WA_2020/weddinghero22/New/Men_-_wedding_store_-_Kurtasets_juttis_3000x1200._CB573501837_.jpg); */
+
+        background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/saba/nov/GW/26th_unrec_hero__3000X1200._CB573381786_.jpg);
     }
 
     20% {
         background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img21/Wireless/Madhav/November/Apple/Airtel/D103479793_WLD-BAU-iPhone_15_Series_DesktopTallHero_3000x1200._CB572594490_.jpg);
 
         background-image: url(https://m.media-amazon.com/images/I/81oEA+yqnRL._SX3000_.jpg);
+
+        background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/OHL/23/Central/BAU/NOv/Desktop_Hero_3000x1200_2_2x._CB574373355_.jpg);
     }
 
     40% {
@@ -1268,6 +1273,7 @@ main {
         background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img21/Wireless/Madhav/November/Apple/Airtel/D103479793_WLD-BAU-iPhone_15_Series_DesktopTallHero_3000x1200._CB572594490_.jpg);
 
         /* background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img23/Fashion/GW/MFD/Nov/AF-Rec-PC-3000._CB572789401_.jpg); */
+        
 
     }
 
@@ -1275,6 +1281,8 @@ main {
         background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/Symbol/2023/GWHeros/Nov/PC_3000_1_1._CB574451900_.jpg);
 
         background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img23/PB/Nov/BAU/Gateway/ATF/PC_Category_DESKTOP_Hero_3000x1200._CB573222572_.jpg);
+
+        background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img23/Beauty/GW/TBS/Makeup-PCcv._CB571629678_.jpg );
     }
 
     80% {
@@ -1284,12 +1292,16 @@ main {
 
         background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img23/Softlines_JWL_SH_GW_Assets/Nov/Shoes/MFD/MEN_Boots/Frame_172_3000pc._CB573014305_.jpg);
 
+        background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img12/home-improvement/Store/JUPITER23/misc1/5299---HI---Home-improvement-lifestyle-hero_3000X1200.rfg._CB573378665_.jpg);
+
     }
 
     90% {
         background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img2020/img21/apparelGW/nov23atf/mfd/rec/EYE_PC3000._CB572909746_.jpg);
 
         /* background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img23/Softlines_JWL_SH_GW_Assets/Nov/Shoes/MFD/MEN_Boots/Frame_172_3000pc._CB573014305_.jpg); */
+
+        background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img23/Softlines_JWL_SH_GW_Assets/UNREC/11th-14th/Shoes/WithoutFDFO/Sports_3000_AU._CB571495199_.jpg);
     }
 
 }
