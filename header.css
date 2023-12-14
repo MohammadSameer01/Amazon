@@ -14,9 +14,18 @@
     --mobiledarkclr-color: #232F3E;
     --mobilelightclr-color: #37475A;
 }
-
-.above-five-hundred {
-    width: 99.03vw;
+/* html::-webkit-scrollbar{
+    width: 0.5vw;
+}
+html::-webkit-scrollbar-track{
+    background: white;
+}
+html::-webkit-scrollbar-thumb{
+    background-color: grey;
+    border-radius: 10px;
+} */
+.abvfh {
+    width: 99.0314104170vw;
     height: 60px;
     background-color: var(--darkclr-color);
     box-sizing: border-box;
@@ -61,7 +70,7 @@ nav li:nth-child(1) {
 }
 
 header nav .nav-one ul li:nth-child(1) img {
-    width: 100px;
+    width: 95px;
 }
 
 .navs {
@@ -79,7 +88,6 @@ header nav .nav-one ul li:nth-child(1) img {
 .location-icon {
     color: white;
     font-size: 1.2rem;
-    /* background-color: red; */
     margin-top: 6px;
 }
 
@@ -237,7 +245,7 @@ select option {
 
 
 @media screen and (min-width:1850px) {
-    .above-five-hundred {
+    .abvfh {
         width: 110rem;
         height: 5.5rem;
     }
@@ -246,7 +254,7 @@ select option {
         width: 150px;
     }
 
-    .above-five-hundred .small-txt,
+    .abvfh .small-txt,
     .big-text {
         font-size: 1.2rem;
     }
@@ -270,7 +278,7 @@ select option {
 
     .header-bottom-bar .navs {
         font-size: 1.2rem;
-        
+
     }
 }
 
@@ -571,7 +579,7 @@ select option {
 }
 
 @media screen and (min-width:501px) and (max-width:20000px) {
-    .upto-five-hundred {
+    .upfh {
         display: none;
     }
 
@@ -593,7 +601,7 @@ select option {
 @media screen and (min-width:280px) and (max-width:500px) {
 
 
-    .above-five-hundred {
+    .abvfh {
         display: none;
     }
 
@@ -601,7 +609,7 @@ select option {
         display: none;
     }
 
-    .upto-five-hundred {
+    .upfh {
         background-color: var(--mobiledarkclr-color);
         height: 9rem;
         width: 100vw;
@@ -615,7 +623,7 @@ select option {
 
     }
 
-    .upto-five-hundred .header-uptofh-one .header-one-left img {
+    .upfh .header-uptofh-one .header-one-left img {
         padding-top: 5px;
         width: 5rem;
     }
