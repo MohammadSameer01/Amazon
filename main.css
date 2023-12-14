@@ -3,7 +3,16 @@
     --cardwhiteclr-color: #ffffff;
     --txtlightblackclr-color: #000000fc;
 }
-
+.main-three-containers::-webkit-scrollbar{
+    height: 4px;
+}
+.main-three-containers::-webkit-scrollbar-track{
+    background: transparent;
+}
+.main-three-containers::-webkit-scrollbar-thumb{
+    background: darkgray;
+    border-radius: 20px;
+}
 body {
     background-color: var(--lghtwhiteclr-color);
 }
@@ -15,7 +24,7 @@ main {
 
 .main-one-adv {
     width: 100%;
-    height: 44vw;
+    height: 45vw;
     background-size: cover;
     background-position-x: center;
     display: flex;
@@ -28,7 +37,6 @@ main {
     overflow: hidden;
     transition: all 0.5s ease;
     border-radius: 0 0 6px 6px;
-
 }
 
 .main-one-adv .main-two-cards {
@@ -222,7 +230,6 @@ main {
     box-shadow: 0.1px 0.1px 5px black;
     overflow: hidden;
     background: linear-gradient(180deg, #000, transparent 40%, transparent 85%, #000);
-
 }
 
 .videocard-txt {
@@ -276,9 +283,7 @@ main {
     position: relative;
     top: -24.5vw;
     z-index: -10;
-
 }
-
 .videocard img {
     position: relative;
     top: -30.5vw;
@@ -410,7 +415,8 @@ main {
 }
 
 .textintheinnercontainer {
-    width: 18vw;
+    /* width: 18vw; */
+    width: 15vw;
     height: 30%;
     display: flex;
     align-items: center;
@@ -554,7 +560,17 @@ main {
 }
 
 
-
+.adt-adv{
+    height:16vw;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-adt-adv{
+    background: darkblue;
+    height: 100%;
+}
 
 @media screen and (min-width:280px) and (max-width:500px) {
     main {
@@ -663,14 +679,16 @@ main {
         color: white;
         box-shadow: 0.1px 0.1px 5px rgba(0, 0, 0, 0.437);
         padding-left: 1vw;
-        background: rgba(0, 0, 0, 0.084)
+        background: rgba(0, 0, 0, 0.084);
     }
 
     .video-bottomtxt {
         height: 6vw;
         width: 40vw;
         margin: 39vw 0 0 2vw;
-        font-size: 2.5vw;
+        font-size: 2.2vw;
+        visibility: hidden;
+
     }
 
     .videocard .video {
@@ -929,6 +947,11 @@ main {
         background-size: cover;
         display: flex;
         align-items: last baseline;
+    }
+
+
+    .adt-adv{
+        display: none;
     }
 
 }
@@ -1250,13 +1273,19 @@ main {
 
 @keyframes bgimg {
     0% {
-        background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img23/Wireless/OnePlus/Flagship/115G/Nov14/D66357764_WLD_OnePlus_Salami_NewLaunch_DesktopTallHero_3000x1200._CB572590834_.jpg);
+        /* background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img23/Wireless/OnePlus/Flagship/115G/Nov14/D66357764_WLD_OnePlus_Salami_NewLaunch_DesktopTallHero_3000x1200._CB572590834_.jpg); */
 
-        /* background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img23/Wireless/Samsung/SamsungM/M34-5G/16thNov/D85723568_INWLD-WLD-Samsung-M34-NewLaunch_tallhero_1500x600._CB572949606_.jpg); */
+        background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img23/Wireless/Samsung/SamsungM/M34-5G/16thNov/D85723568_INWLD-WLD-Samsung-M34-NewLaunch_tallhero_1500x600._CB572949606_.jpg);
 
         /* background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img2020/fashion/WA_2020/weddinghero22/New/Men_-_wedding_store_-_Kurtasets_juttis_3000x1200._CB573501837_.jpg); */
 
-        background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/saba/nov/GW/26th_unrec_hero__3000X1200._CB573381786_.jpg);
+        /* background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/saba/nov/GW/26th_unrec_hero__3000X1200._CB573381786_.jpg); */
+
+
+        /* background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img23/Wireless/Samsung/SamsungM/M13/1stDec/D50328974_IN_WLME_SamsungGalaxy_M13_series_Tall_Hero_1500x600._CB572209152_.jpg); */
+
+        background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img23/Wireless/OnePlus/CommunitySale/2023/DEC12/11R/D106945245-_WLD_OnePlus_CommunitySale_Dec23_DesktopTallHero_3000x1200._CB571104905_.jpg);
+
     }
 
     20% {
@@ -1265,6 +1294,9 @@ main {
         background-image: url(https://m.media-amazon.com/images/I/81oEA+yqnRL._SX3000_.jpg);
 
         background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/OHL/23/Central/BAU/NOv/Desktop_Hero_3000x1200_2_2x._CB574373355_.jpg);
+
+        background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img17/Home/AmazonTV/Ishqiyapa/Hero_PC/3000x1200_Ishqyapa_V3._CB572210125_.jpg);
+
     }
 
     40% {
@@ -1274,7 +1306,11 @@ main {
 
         /* background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img23/Fashion/GW/MFD/Nov/AF-Rec-PC-3000._CB572789401_.jpg); */
         
+        background-image: url(https://m.media-amazon.com/images/I/71G0IFlgU-L._SX3000_.jpg);
 
+        background-image: url(https://m.media-amazon.com/images/I/71sjzG6l1OL._SX3000_.jpg);
+
+        background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/IMG23/Ayushi/OP_Hero_3000x1200._CB571193467_.jpg);
     }
 
     60% {
@@ -1283,6 +1319,8 @@ main {
         background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img23/PB/Nov/BAU/Gateway/ATF/PC_Category_DESKTOP_Hero_3000x1200._CB573222572_.jpg);
 
         background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img23/Beauty/GW/TBS/Makeup-PCcv._CB571629678_.jpg );
+
+        background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img23/Wireless/OnePlus/Nord/NordCE3_Ziti/GW/Nov/30/D90458496_WLD_OnePlus_Ziti_NewLaunch_Tall_hero_1500x600_2._CB572130264_.jpg);
     }
 
     80% {
@@ -1302,6 +1340,8 @@ main {
         /* background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img23/Softlines_JWL_SH_GW_Assets/Nov/Shoes/MFD/MEN_Boots/Frame_172_3000pc._CB573014305_.jpg); */
 
         background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img23/Softlines_JWL_SH_GW_Assets/UNREC/11th-14th/Shoes/WithoutFDFO/Sports_3000_AU._CB571495199_.jpg);
+
+        background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img21/VGSW/2023/Q4/Homepage_DesktopHeroTemplate_1500x600-Ps5-hero-vg-dec-2023_._CB572140528_.jpg);
     }
 
 }
