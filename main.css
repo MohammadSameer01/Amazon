@@ -3,16 +3,20 @@
     --cardwhiteclr-color: #ffffff;
     --txtlightblackclr-color: #000000fc;
 }
-.main-three-containers::-webkit-scrollbar{
+
+.main-three-containers::-webkit-scrollbar {
     height: 4px;
 }
-.main-three-containers::-webkit-scrollbar-track{
+
+.main-three-containers::-webkit-scrollbar-track {
     background: transparent;
 }
-.main-three-containers::-webkit-scrollbar-thumb{
+
+.main-three-containers::-webkit-scrollbar-thumb {
     background: darkgray;
     border-radius: 20px;
 }
+
 body {
     background-color: var(--lghtwhiteclr-color);
 }
@@ -284,6 +288,7 @@ main {
     top: -24.5vw;
     z-index: -10;
 }
+
 .videocard img {
     position: relative;
     top: -30.5vw;
@@ -543,7 +548,8 @@ main {
     justify-content: space-evenly;
     align-items: center;
 }
-.cmncardtxt{
+
+.cmncardtxt {
     width: 100%;
     height: 20%;
     font-family: Arial, Helvetica, sans-serif;
@@ -555,19 +561,20 @@ main {
     color: var(--txtlightblackclr-color);
 }
 
-.maininmbl{
+.maininmbl {
     display: none;
 }
 
 
-.adt-adv{
-    height:16vw;
+.adt-adv {
+    height: 16vw;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.img-adt-adv{
+
+.img-adt-adv {
     background: darkblue;
     height: 100%;
 }
@@ -665,9 +672,11 @@ main {
         width: 100vw;
         margin: 1vw 2vw;
     }
-    .videocard{
+
+    .videocard {
         order: 1;
     }
+
     .videocard-txt {
         margin: 0.5vw;
         display: flex;
@@ -766,6 +775,7 @@ main {
         display: flex;
         align-items: center;
     }
+
     /* container slider styling starts from here */
 
     .main-three {
@@ -932,12 +942,13 @@ main {
         justify-content: space-evenly;
         align-items: center;
     }
-    .cmncardtxt{
+
+    .cmncardtxt {
         font-size: 3vw;
     }
 
 
-    .maininmbl{
+    .maininmbl {
         height: 70vw;
         background: var(--lghtwhiteclr-color);
         background: #adc2dc;
@@ -950,7 +961,7 @@ main {
     }
 
 
-    .adt-adv{
+    .adt-adv {
         display: none;
     }
 
@@ -1286,6 +1297,7 @@ main {
 
         background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img23/Wireless/OnePlus/CommunitySale/2023/DEC12/11R/D106945245-_WLD_OnePlus_CommunitySale_Dec23_DesktopTallHero_3000x1200._CB571104905_.jpg);
 
+
     }
 
     20% {
@@ -1297,6 +1309,8 @@ main {
 
         background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img17/Home/AmazonTV/Ishqiyapa/Hero_PC/3000x1200_Ishqyapa_V3._CB572210125_.jpg);
 
+        background-image: url(https://m.media-amazon.com/images/I/81MCcdjpC7L._SX3000_.jpg);
+
     }
 
     40% {
@@ -1305,7 +1319,7 @@ main {
         background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img21/Wireless/Madhav/November/Apple/Airtel/D103479793_WLD-BAU-iPhone_15_Series_DesktopTallHero_3000x1200._CB572594490_.jpg);
 
         /* background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img23/Fashion/GW/MFD/Nov/AF-Rec-PC-3000._CB572789401_.jpg); */
-        
+
         background-image: url(https://m.media-amazon.com/images/I/71G0IFlgU-L._SX3000_.jpg);
 
         background-image: url(https://m.media-amazon.com/images/I/71sjzG6l1OL._SX3000_.jpg);
@@ -1345,30 +1359,45 @@ main {
     }
 
 }
+
 @keyframes bgimgmbl {
     0% {
         background-image: url(https://m.media-amazon.com/images/I/61gb0by1JJL._SR1236,1080_.jpg);
+
+
+
+        background-image: url(https://m.media-amazon.com/images/I/714YfRzb0NL._SR1236,1080_.jpg);
     }
 
     20% {
+        background-image: url(https://m.media-amazon.com/images/I/614cl0KzAML._SR1236,1080_.jpg);
+
         background-image: url(https://m.media-amazon.com/images/I/61dJfEWog5L._SR1236,1080_.jpg);
     }
 
     40% {
         background-image: url(https://m.media-amazon.com/images/I/71bMQBcHlXL._SR1236,1080_.jpg);
+
+        background-image: url(https://m.media-amazon.com/images/S/al-eu-726f4d26-7fdb/4c5a5c67-040b-46ed-9ae8-bfd573e5c91f.jpg);
     }
 
     60% {
         background-image: url(https://m.media-amazon.com/images/I/617+J4-+v8L._SR1236,1080_.jpg);
+
+        background-image: url(https://m.media-amazon.com/images/I/81mVGfSL9IL._SR1236,1080_.png);
     }
 
-    75% {
+    80% {
         background-image: url(https://m.media-amazon.com/images/I/616+dA0LtZL._SR1236,1080_.jpg);
 
+        background-image: url(https://m.media-amazon.com/images/I/61600SutPXL._SR1236,1080_.jpg);
+
     }
 
-    80%{
-       background-image: url(https://m.media-amazon.com/images/I/61tq5nR8JFL._SR1236,1080_.jpg);
+    100% {
+        background-image: url(https://m.media-amazon.com/images/I/61tq5nR8JFL._SR1236,1080_.jpg);
+
+        background-image: url(https://m.media-amazon.com/images/S/al-eu-726f4d26-7fdb/4db15f46-50d2-4a92-a551-32e769daff20.jpg);
     }
 
 }
