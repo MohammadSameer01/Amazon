@@ -177,7 +177,7 @@
 .mor-vert-five li {
     margin: 0.5em;
     margin-left: 1em;
-    font-size: 0.86em;
+    font-size: 0.89em;
 }
 
 
@@ -265,7 +265,78 @@
     width: fit-content;
 }
 
+.mor-vert-addtocart-and-buy {
+    margin: 1em auto;
+    width: 85%;
+    border-bottom: 1px solid var(--lightblack);
+    padding: 1em 0 2em 0;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background: red; */
+}
 
+.free-delivery {
+    line-height: 32px;
+}
+
+.prime-free-delivery {
+    line-height: 32px;
+}
+
+.quantity select {
+    width: 7em;
+    font-size: 0.7em;
+    padding: 0.2em;
+    /* background: darkblue; */
+    margin-top: 1em;
+    margin-bottom: 2em;
+    background: rgb(224, 224, 224);
+    border-radius: 1em;
+}
+
+.orderingmethods {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.add-to-cart {
+    width: 40%;
+    height: 2.8em;
+    background: #FFD814;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    font-size: 0.8em;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background: #deb900;
+}
+
+.buy-now {
+    width: 40%;
+    height: 2.8em;
+    background: #FFA41C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    font-size: 0.8em;
+    cursor: pointer;
+}
+
+.buy-now:hover {
+    background: #e88b00;
+}
+
+.bluecolor {
+    color: #007185;
+}
+
+.greencolor {
+    color: #007600;
+}
 
 @media screen and (max-width:700px) {
     .adtnl-mbl-navbar {
@@ -401,6 +472,7 @@
 
     .main-one {
         display: grid;
+        padding-top: 0.1em;
     }
 
     .main-one-left {
@@ -419,14 +491,17 @@
 
     .mor-vert-one {
         border-bottom: 1px solid var(--lightblack);
-        /* background: darkred; */
-        padding: 0;
+        /* padding: 0; */
     }
-
     .pdct-info {
         font-size: 1.3em;
-
     }
+
+    .trating {
+        /* background: red; */
+        padding: 0 0.5em 0 0.5em;
+    }
+
     .main-three {
         padding: 1em;
         font-family: Arial, Helvetica, sans-serif;
@@ -436,32 +511,32 @@
         border-top: 1px solid var(--lightblack);
         margin-top: 2em;
     }
-    
+
     .main-three-top-heading {
         color: #C60;
         font-weight: 700;
     }
-    
+
     .main-three-flexbox {
         display: grid;
         justify-content: space-evenly;
     }
-    
+
     .main-three-fleft {
         width: 100%;
         box-sizing: border-box;
     }
-    
+
     .main-three-fleft-heading {
         line-height: 32px;
         padding: 0.6em 1em 0.6em 0;
     }
-    
+
     .main-three-fleft-left {
         display: flex;
         padding-left: 0;
     }
-    
+
     .fleft-left-left {
         width: 50%;
         background: #F0F2F2;
@@ -472,7 +547,7 @@
         font-size: 0.9em;
         padding: 0.3em;
     }
-    
+
     .fleft-left-right {
         display: flex;
         align-items: center;
@@ -484,16 +559,79 @@
         color: #333;
         padding: 0.3em;
     }
-    
+
     .main-three-fright {
         width: 100%;
         box-sizing: border-box;
     }
-    
+
     .main-three-fright .main-three-fleft-heading {
         margin-left: 0em;
         width: unset;
         text-align: center;
+    }
+
+    .mor-vert-addtocart-and-buy {
+        margin: 1em auto;
+        width: 100%;
+        border-bottom: 1px solid var(--lightblack);
+        padding: 1em 0 2em 0;
+        font-family: Arial, Helvetica, sans-serif;
+        /* background: red; */
+    }
+
+    .free-delivery {
+        line-height: 20px;
+        font-size: 0.8em;
+    }
+
+    .prime-free-delivery {
+        line-height: 20px;
+        font-size: 0.8em;
+    }
+
+    .quantity select {
+        width: 7em;
+        font-size: 0.7em;
+        padding: 0.2em;
+        /* background: darkblue; */
+        margin-top: 1em;
+        margin-bottom: 2em;
+        background: rgb(224, 224, 224);
+        border-radius: 1em;
+    }
+
+    .orderingmethods {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .add-to-cart {
+        width: 45%;
+        height: 2.8em;
+        background: #FFD814;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+        font-size: 0.8em;
+        cursor: pointer;
+    }
+
+    .add-to-cart:hover {
+        background: #deb900;
+    }
+
+    .buy-now {
+        width: 45%;
+        height: 2.8em;
+        background: #FFA41C;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+        font-size: 0.8em;
+        cursor: pointer;
     }
 
 }
