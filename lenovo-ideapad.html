@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Amazon.com. Spend less. Smile more</title>
+
+    <link rel="icon" type="jpg"
+        href="data:image/png;base64,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">
+
+    <!-- <link rel="icon" href="image.jpg"> -->
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="items.css">
+
+</head>
+
+<body>
+
+
+    <!-- <header> -->
+    <header class="abvfh">
+        <nav>
+            <div class="nav-one">
+                <ul>
+                    <li class="navs">
+                        <img src="PngItem_12080.png" alt="">
+                    </li>
+                    <li class="navs">
+                        <span class="material-symbols-outlined location-icon">
+                            location_on
+                        </span>
+                        <div class="li-inner-text">
+                            <div class="small-txt">Deliver to MOHAMMAD</div>
+                            <div class="big-text">Narsampet 506132</div>
+                        </div>
+                    </li>
+                    <li class="navs-three">
+                        <select name="dropdown" id="nav-dropdown">
+                            <option value="default" selected>All</option>
+                            <option class="dropdown-font-size" value=" ">Alexa Skills</option>
+                            <option class="dropdown-font-size" value="">Amazon Devices</option>
+                            <option class="dropdown-font-size" value="">Amazon Fashion</option>
+                            <option class="dropdown-font-size" value="">Amazon Fresh</option>
+                            <option class="dropdown-font-size" value="">Amazon Pharmacy</option>
+                            <option class="dropdown-font-size" value="">Appliances</option>
+                            <option class="dropdown-font-size" value="">Apps & Games</option>
+                            <option class="dropdown-font-size" value="">Audible Audio</option>
+                            <option class="dropdown-font-size" value="">Baby</option>
+                            <option class="dropdown-font-size" value="">Beauty</option>
+                            <option class="dropdown-font-size" value="">Books</option>
+                            <option class="dropdown-font-size" value="">Car & Motorbikes</option>
+                            <option class="dropdown-font-size" value="">Clothing & Accessories</option>
+                            <option class="dropdown-font-size" value="">Collectibles</option>
+                            <option class="dropdown-font-size" value="">Computer & Accessories</option>
+                            <option class="dropdown-font-size" value="">Electronics</option>
+                            <option class="dropdown-font-size" value="">Furniture</option>
+                            <option class="dropdown-font-size" value="">Garden & Outdoor</option>
+                            <option class="dropdown-font-size" value="">Giftcards</option>
+                            <option class="dropdown-font-size" value="">Grocery</option>
+                            <option class="dropdown-font-size" value="">Health</option>
+                            <option class="dropdown-font-size" value="">Home & Kitchen</option>
+                            <option class="dropdown-font-size" value="">Industrial & scientific</option>
+                            <option class="dropdown-font-size" value="">Jewellery</option>
+                            <option class="dropdown-font-size" value="">Kindle Store</option>
+                            <option class="dropdown-font-size" value="">Luggage & Bags</option>
+                            <option class="dropdown-font-size" value="">Luxury Beauty</option>
+                            <option class="dropdown-font-size" value="">Movies & TV shows</option>
+                            <option class="dropdown-font-size" value="">Music</option>
+                        </select>
+                        <input type="search" name="search-bar" id="search-bar" placeholder="Search Amazon.in">
+                        <span class="material-symbols-outlined search-icon">
+                            search
+                        </span>
+                    </li>
+                    <li class="navs">
+                        <img src="https://th.bing.com/th/id/OIP.gDlzAPxkwTNSlLymNYiLPAHaE8?pid=ImgDet&w=800&h=534&rs=1"
+                            alt="" class="indianflag">
+                        <div class="languageselector">en</div>
+                        <span class="material-symbols-outlined">
+                            arrow_drop_down
+                        </span>
+                    </li>
+                    <li class="navs">
+                        <div class="li-inner-text">
+                            <div class="small-txt colorwhite">Hello, Mohammad</div>
+                            <div class="big-text">Account & Lists</div>
+                        </div>
+                        <span class="material-symbols-outlined">
+                            arrow_drop_down
+                        </span>
+                    </li>
+                    <li class="navs">
+                        <div class="li-inner-text">
+                            <div class="small-txt colorwhite">Returns</div>
+                            <div class="big-text">& Orders</div>
+                        </div>
+                    </li>
+                    <li class="navs">
+                        <span class="material-symbols-outlined">
+                            shopping_cart
+                        </span>
+                        <div class="big-text">Cart</div>
+                    </li>
+                    <li class="navs">
+                        <span class="material-symbols-outlined">
+                            menu
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <header class="upfh">
+
+        <div class="header-uptofh-one">
+            <div class="header-one-left">
+                <span class="material-symbols-outlined mobile-menu-icon">
+                    menu
+                </span>
+                <img src="PngItem_12080.png" alt="" class="header-phone-logo">
+            </div>
+            <div class="header-one-right">
+                <div class="nameandprofilelogo">
+                    <div class="header-pfname">Mohammad</div>
+                    <span class="material-symbols-outlined">
+                        person
+                    </span>
+                </div>
+                <span class="material-symbols-outlined">
+                    shopping_cart
+                </span>
+            </div>
+        </div>
+
+        <div class="header-uptofh-two">
+            <input type="search" name="search" id="mbl-search-bar" placeholder="Search Amazon.in">
+            <span class="material-symbols-outlined search-icon-mbl">
+                search
+            </span>
+        </div>
+
+        <div class="header-uptofh-three">
+            <ul>
+                <li class="navs">category</li>
+                <li class="navs">your lists</li>
+                <li class="navs">deals</li>
+                <li class="navs">sell</li>
+            </ul>
+        </div>
+
+        <div class="uptothree320px">
+            Switch to other compaitable devices
+        </div>
+
+    </header>
+    <div class="header-bottom-bar">
+        <div class="header-bottom-bar-left">
+            <div class="navs">
+                <span class="material-symbols-outlined">
+                    menu
+                </span>
+                <span class="menualltxt">all</span>
+            </div>
+            <div class="navs">sell</div>
+            <div class="navs">amazon pay</div>
+            <div class="navs">buy again</div>
+            <div class="navs">amazon miniTV</div>
+            <div class="navs">gift cards</div>
+            <div class="navs">coupons</div>
+            <div class="navs">amazonBasics</div>
+            <div class="navs">browsing history</div>
+            <div class="navs">customer service</div>
+        </div>
+        <div class="header-bottom-bar-right navs">
+            <!-- <img src="https://m.media-amazon.com/images/G/31/AmazonVideo/2021/X-site/SingleTitle/TheGreatIndianFamily/400x39-SWM_NP._CB572974686_.jpg" alt="" class="bottom-bar-img"> -->
+            <img src="https://m.media-amazon.com/images/G/31/Gateway_IN/testing/NewLaunches_400x39._CB593645585_.jpg"
+                alt="" class="bottom-bar-img">
+
+        </div>
+        <div class="header-bottom-bar-below500">
+
+            <div class="deliveryadress">
+                <span class="material-symbols-outlined">
+                    location_on
+                </span>
+                <span class="location-add-margin">
+                    Deliver to MOHAMMAD - Narsampet 506132
+                </span>
+                <span class="material-symbols-outlined">
+                    arrow_drop_down
+                </span>
+            </div>
+
+        </div>
+    </div>
+    <div class="adtnl-mbl-navbar">
+        <div class="adtnl-navs">
+            <img src="navimage1.jpg" alt="">
+            <div class="adtnl-mbl-navbar-txt">prime</div>
+        </div>
+        <div class="adtnl-navs">
+            <img src="navimage2.jpg" alt="">
+            <div class="adtnl-mbl-navbar-txt">deals</div>
+        </div>
+        <div class="adtnl-navs">
+            <img src="navimage3.jpg" alt="">
+            <div class="adtnl-mbl-navbar-txt">mobiles</div>
+        </div>
+        <div class="adtnl-navs">
+            <img src="navimage4.jpg" alt="">
+            <div class="adtnl-mbl-navbar-txt">fashion</div>
+        </div>
+        <div class="adtnl-navs">
+            <img src="navimage5.jpg" alt="">
+            <div class="adtnl-mbl-navbar-txt">miniTV</div>
+        </div>
+        <div class="adtnl-navs">
+            <img src="navimage6.jpg" alt="">
+            <div class="adtnl-mbl-navbar-txt">play</div>
+        </div>
+        <div class="adtnl-navs">
+            <img src="navimage7.jpg" alt="">
+            <div class="adtnl-mbl-navbar-txt">electronics</div>
+        </div>
+        <div class="adtnl-navs">
+            <img src="navimage8.jpg" alt="">
+            <div class="adtnl-mbl-navbar-txt">home</div>
+        </div>
+        <div class="adtnl-navs">
+            <img src="navimage9.jpg" alt="">
+            <div class="adtnl-mbl-navbar-txt">travel</div>
+        </div>
+        <div class="adtnl-navs">
+            <img src="navimage10.jpg" alt="">
+            <div class="adtnl-mbl-navbar-txt">beauty</div>
+        </div>
+
+    </div>
+    <!-- </header> -->
+
+    <main>
+        <div class="main-one">
+            <div class="main-one-left">
+                <img class="product-image" src="https://m.media-amazon.com/images/I/61wLTc0YixL._SX679_.jpg" alt="">
+            </div>
+            <div class="main-one-right">
+                <div class="mor-vert-one">
+                    <div class="pdct-info">
+                        Lenovo IdeaPad Slim 5 Intel Core i5 12450H 16" (40.6cm) WUXGA+ IPS Laptop (16GB/512GB SSD/Win
+                        11/Office 2021/Backlit KB/FHD Camera/Alexa/3 Month Game Pass/Cloud Grey/1.89Kg), 83BG000PIN
+                    </div>
+                    <div class="store-details blue-txt">
+                        Visit the Lenovo Store
+                    </div>
+                    <div class="rating-div">
+                        <div class="rating-stars">
+                            <span>4.9</span>
+                            <img src="ratingicon.png" alt="" class="rating-star">
+                            <img src="ratingicon.png" alt="" class="rating-star">
+                            <img src="ratingicon.png" alt="" class="rating-star">
+                            <img src="ratingicon.png" alt="" class="rating-star">
+                            <img src="ratingicon.png" alt="" class="rating-star">
+                        </div>
+                        <span class="trating border-right blue-txt">
+                            49 ratings
+                        </span>
+                        <span class="trating blue-txt">
+                            89 answered questions
+                        </span>
+                    </div>
+                </div>
+                <div class="mor-vert-two">
+                    <div class="price-ofproduct">
+                        <span class="discounttextinprice">-26%</span>
+                        <span>₹62,190</span>
+                        <div class="mrpoftheproduct">
+                            M.R.P.: <span class="mrplinetrough">
+                                ₹84,290
+                            </span>
+                        </div>
+                    </div>
+                    <div class="incl-ofproduct smallfontsize">
+                        Inclusive of all taxes
+                    </div>
+                    <div class="emi-ofproduct smallfontsize">
+                        <b>EMI</b> starts at ₹3,015 ,no cost EMI available <div class="blue-txt">EMI options</div>
+                    </div>
+                </div>
+                <div class="mor-vert-three">
+                    <div class="mor-vert-three-top">
+                        <img src="discountlogo.png" alt="" class="offericon">
+                        <div>offers</div>
+                    </div>
+                    <div class="mor-vert-three-bottom">
+                        <div>
+                            <b>No Cost EMI</b>
+                        </div>
+                        <div>
+                            Upto ₹2,800.34 EMI interest savings on Amazon Pay ICICI Bank Credit…
+                        </div>
+                        <div class="mor-vert-three-btm-ofr">
+                            <span class="blue-txt">1 offer</span> <span class="material-symbols-outlined">
+                                chevron_right
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mor-vert-four">
+                    <div class="mor-vert-four-box">
+                        <img class="mor-four-img"
+                            src="https://m.media-amazon.com/images/G/31/A2I-Convert/mobile/IconFarm/icon-returns._CB484059092_.png"
+                            alt="">
+                        <span class="blue-txt">
+                            7 days Replacement by Brand
+                        </span>
+                    </div>
+                    <div class="mor-vert-four-box">
+                        <img class="mor-four-img"
+                            src="https://m.media-amazon.com/images/G/31/A2I-Convert/mobile/IconFarm/trust_icon_free_shipping_81px._CB630870460_.png"
+                            alt="">
+                        <span class="blue-txt">
+                            Free Delivery
+                        </span>
+                    </div>
+                    <div class="mor-vert-four-box">
+                        <img class="mor-four-img"
+                            src="https://m.media-amazon.com/images/G/31/A2I-Convert/mobile/IconFarm/icon-warranty._CB485935626_.png"
+                            alt="">
+                        <span class="blue-txt">
+                            1 Year Warranty
+                        </span>
+                    </div>
+                    <div class="mor-vert-four-box">
+                        <img class="mor-four-img"
+                            src="https://m.media-amazon.com/images/G/31/A2I-Convert/mobile/IconFarm/icon-top-brand._CB617044271_.png"
+                            alt="">
+                        <span class="blue-txt">
+                            Top Brand
+                        </span>
+                    </div>
+                    <div class="mor-vert-four-box">
+                        <img class="mor-four-img"
+                            src="https://m.media-amazon.com/images/G/31/A2I-Convert/mobile/IconFarm/icon-amazon-delivered._CB485933725_.png"
+                            alt="">
+                        <span class="blue-txt">
+                            Amazon Delivered
+                        </span>
+                    </div>
+                </div>
+                <div class="mor-vert-five">
+                    <ul>
+                        <b>About this item</b>
+                        <li>
+                            HD Audio
+                        </li>
+                        <li>
+                            Memory Card Slot
+                        </li>
+                        <li>
+                            Anti Glare Coating
+                        </li>
+                        <li>
+                            Backlit Keyboard
+                        </li>
+                        <li class="blue-txt">
+                            See more product details
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main-two">
+            <img src="https://m.media-amazon.com/images/S/aplus-media-library-service-media/cd55b04b-0b8d-4daa-addc-fc45e931e545.__CR0,0,970,600_PT0_SX970_V1___.jpg"
+                alt="" class="imagesfmaintwo">
+            <img src="https://m.media-amazon.com/images/S/aplus-media-library-service-media/eb57c7bc-ee04-43f3-8c97-3c5c1309cbfa.__CR0,0,970,600_PT0_SX970_V1___.jpg"
+                alt="" class="imagesfmaintwo">
+            <img src="https://m.media-amazon.com/images/S/aplus-media-library-service-media/ca2b507f-aa10-4c7a-9530-cacdc82701d1.__CR0,0,970,600_PT0_SX970_V1___.jpg"
+                alt="" class="imagesfmaintwo">
+            <img src="https://m.media-amazon.com/images/S/aplus-media-library-service-media/0bcb8fc8-4ecf-4fbb-b8ad-4f2d4474e53d.__CR0,0,970,600_PT0_SX970_V1___.png"
+                alt="" class="imagesfmaintwo">
+            <img src="https://m.media-amazon.com/images/S/aplus-media-library-service-media/a6cc0c8b-74ef-4daf-858f-4f9c53894d02.__CR0,0,970,600_PT0_SX970_V1___.jpg"
+                alt="" class="imagesfmaintwo">
+
+        </div>
+        <div class="main-three">
+            <div class="main-three-top-heading">
+                <span>
+                    Product information
+                </span>
+            </div>
+            <div class="main-three-flexbox">
+
+                <div class="main-three-fleft">
+
+                    <div class="main-three-fleft-heading">
+                        Technical Details
+                    </div>
+
+                    <div class="main-three-fleft-left">
+                        <div class="fleft-left-left">
+                            Brand
+                        </div>
+                        <div class="fleft-left-right">
+                            Lenovo
+                        </div>
+
+                    </div>
+                    <div class="main-three-fleft-left">
+                        <div class="fleft-left-left">
+                            Manufacturer
+                        </div>
+                        <div class="fleft-left-right">
+                            ‎Lenovo, One of the below: Hefei Bitland Information Technology Co.,Ltd - No.4088 Jiuxiu
+                            Road
+                            National Hefei economic & technology development area Hefei Anhui China LCFC（Hefei)
+                            Electronics
+                            Technology Co., Ltd. - NO.1-3188,YUNGU ROAD, HEFEI EXPORT PROCESSING ZONE. ANHUI
+                            PROVINCE,CHINA
+                            Tech-Com(Shanghai) Computer Co Ltd - No.6 Ln.58,San-Zhuang Rd., Songjiang EPZ ShangHai,
+                            China
+                            Wistron InfoComm (Kunshan) Co.Ltd - 168# First Avenue, Kunshan Export Processing Zone,
+                            Kunshan,
+                            Jiangsu, China Compal information technology (kunshan) CO., LTD. - Address: No. 58, the 1st
+                            street, Kunshan Export Processing Zone, Jiangsu, P.R.O.C. CHINA Kunshan Hichain storage Co.
+                            Ltd
+                            - No. 88 Xinxiang Road Avenue Kunshan CBZ Wujiang Hichain warehousing LTD - No.2088 Pangjin
+                            road, Wujiang economic development area, Jiangsu, China
+                        </div>
+
+                    </div>
+                    <div class="main-three-fleft-left">
+                        <div class="fleft-left-left">
+                            Series
+                        </div>
+                        <div class="fleft-left-right">
+                            ‎IdeaPad Slim 5 16IAH8
+                        </div>
+
+                    </div>
+                    <div class="main-three-fleft-left">
+                        <div class="fleft-left-left">
+                            Colour
+                        </div>
+                        <div class="fleft-left-right">
+                            Cloud Grey
+                        </div>
+                    </div>
+                    <div class="main-three-fleft-left">
+                        <div class="fleft-left-left">
+                            Form Factor
+                        </div>
+                        <div class="fleft-left-right">
+                            Ultra-Portable
+                        </div>
+
+                    </div>
+                    <div class="main-three-fleft-left">
+                        <div class="fleft-left-left">
+                            Item Height
+                        </div>
+                        <div class="fleft-left-right">
+                            ‎50.7 Centimeters
+                        </div>
+                    </div>
+                    <div class="main-three-fleft-left">
+                        <div class="fleft-left-left">
+                            Item Width
+                        </div>
+                        <div class="fleft-left-right">
+                            8 Centimeters
+                        </div>
+                    </div>
+                    <div class="main-three-fleft-left">
+                        <div class="fleft-left-left">
+                            Standing screen display size
+                        </div>
+                        <div class="fleft-left-right">
+                            16 Inches
+                        </div>
+                    </div>
+                    <div class="main-three-fleft-left">
+                        <div class="fleft-left-left">
+                            Screen Resolution
+                        </div>
+                        <div class="fleft-left-right">
+                            1920 x 1200 pixel
+                        </div>
+                    </div>
+                    <div class="main-three-fleft-left">
+                        <div class="fleft-left-left">
+                            Resolution
+                        </div>
+                        <div class="fleft-left-right">
+                            1920 x 1200 Pixels
+                        </div>
+                    </div>
+                    <div class="main-three-fleft-left">
+                        <div class="fleft-left-left">
+                            Product Dimensions
+                        </div>
+                        <div class="fleft-left-right">
+                            50.7 x 8 x 50.7 cm; 1.89 Kilograms
+                        </div>
+                    </div>
+                    <div class="main-three-fleft-left">
+                        <div class="fleft-left-left">
+                            Batteries
+                        </div>
+                        <div class="fleft-left-right">
+                            1 Lithium Polymer batteries required. (included)
+                        </div>
+                    </div>
+                    <div class="main-three-fleft-left">
+                        <div class="fleft-left-left">
+                            Processor Brand
+                        </div>
+                        <div class="fleft-left-right">
+                            Intel
+                        </div>
+                    </div>
+                    <div class="main-three-fleft-left">
+                        <div class="fleft-left-left">
+                            Processor Type
+                        </div>
+                        <div class="fleft-left-right">
+                            Core i5
+                        </div>
+                    </div>
+                    <div class="main-three-fleft-left">
+                        <div class="fleft-left-left">
+                            Processor Speed
+                        </div>
+                        <div class="fleft-left-right">
+                            2 GHz
+                        </div>
+                    </div>
+                    <div class="main-three-fleft-left">
+                        <div class="fleft-left-left">
+                            Processor Count
+                        </div>
+                        <div class="fleft-left-right">
+                            8
+                        </div>
+                    </div>
+                    <div class="main-three-fleft-left">
+                        <div class="fleft-left-left">
+                            RAM Size
+                        </div>
+                        <div class="fleft-left-right">
+                            16 GB
+                        </div>
+                    </div>
+                    <div class="main-three-fleft-left">
+                        <div class="fleft-left-left">
+                            Memory Technology
+                        </div>
+                        <div class="fleft-left-right">
+                            Lpddr5
+                        </div>
+                    </div>
+                    <div class="main-three-fleft-left">
+                        <div class="fleft-left-left">
+                            Computer Memory Type
+                        </div>
+                        <div class="fleft-left-right">
+                            DDR5 RAM
+                        </div>
+                    </div>
+                    <div class="main-three-fleft-left">
+                        <div class="fleft-left-left">
+                            Maximum Memory Supported
+                        </div>
+                        <div class="fleft-left-right">
+                            16 GB
+                        </div>
+                    </div>
+                    <div class="main-three-fleft-left">
+                        <div class="fleft-left-left">
+                            Hard Drive Size
+                        </div>
+                        <div class="fleft-left-right">
+                            512 GB
+                        </div>
+                    </div>
+                    <div class="main-three-fleft-left">
+                        <div class="fleft-left-left">
+                            Hard Disk Description
+                        </div>
+                        <div class="fleft-left-right">
+                            SSD
+                        </div>
+                    </div>
+                    <div class="main-three-fleft-left">
+                        <div class="fleft-left-left">
+                            Hard Drive Interface
+                        </div>
+                        <div class="fleft-left-right">
+                            PCIE x 4
+                        </div>
+                    </div>
+                    <div class="main-three-fleft-left">
+                        <div class="fleft-left-left">
+                            Graphics Card Description
+                        </div>
+                        <div class="fleft-left-right">
+                            Integrated
+                        </div>
+                    </div>
+                    <div class="main-three-fleft-left">
+                        <div class="fleft-left-left">
+                            Item Weight
+                        </div>
+                        <div class="fleft-left-right">
+                            1 kg 890 g
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-three-fright">
+
+                    <div class="main-three-fleft-heading">
+                        Additional Information
+                    </div>
+                    <div class="main-three-fleft-left">
+                        <div class="fleft-left-left">
+                            ASIN
+                        </div>
+                        <div class="fleft-left-right">
+                            B0CFF42RJ6
+                        </div>
+                    </div>
+                    <div class="main-three-fleft-left">
+                        <div class="fleft-left-left">
+                            Best Sellers Rank
+                        </div>
+                        <div class="fleft-left-right">
+                            #7,601 in Computers & Accessories (See Top 100 in Computers & Accessories)
+                            #245 in Traditional Laptops
+                        </div>
+                    </div>
+                    <div class="main-three-fleft-left">
+                        <div class="fleft-left-left">
+                            Date First Available
+                        </div>
+                        <div class="fleft-left-right">
+                            11 August 2023
+                        </div>
+                    </div>
+                    <div class="main-three-fleft-left">
+                        <div class="fleft-left-left">
+                            Packer
+                        </div>
+                        <div class="fleft-left-right">
+                            One of the below: Hefei Bitland Information Technology Co.,Ltd - No.4088 Jiuxiu Road
+                            National Hefei economic & technology development area Hefei Anhui China LCFC（Hefei)
+                            Electronics Technology Co., Ltd. - NO.1-3188,YUNGU ROAD, HEFEI EXPORT PROCESSING ZONE. ANHUI
+                            PROVINCE,CHINA Tech-Com(Shanghai) Computer Co Ltd - No.6 Ln.58,San-Zhuang Rd., Songjiang EPZ
+                            ShangHai, China Wistron InfoComm (Kunshan) Co.Ltd - 168# First Avenue, Kunshan Export
+                            Processing Zone, Kunshan, Jiangsu, China Compal information technology (kunshan) CO., LTD. -
+                            Address: No. 58, the 1st street, Kunshan Export Processing Zone, Jiangsu, P.R.O.C. CHINA
+                            Kunshan Hichain storage Co. Ltd - No. 88 Xinxiang Road Avenue Kunshan CBZ Wujiang Hichain
+                            warehousing LTD - No.2088 Pangjin road, Wujiang economic development area, Jiangsu, China
+                        </div>
+                    </div>
+                    <div class="main-three-fleft-left">
+                        <div class="fleft-left-left">
+                            Importer
+                        </div>
+                        <div class="fleft-left-right">
+                            Lenovo (India) Private Limited, RBD Icon, Level 2, Doddenakundi Village, Marathahalli Outer
+                            Ring Road, K. R. Puram Hobli, Bangalore 560037, Karnataka, India
+                        </div>
+                    </div>
+                    <div class="main-three-fleft-left">
+                        <div class="fleft-left-left">
+                            Item Dimensions LxWxH
+                        </div>
+                        <div class="fleft-left-right">
+                            50.7 x 8 x 50.7 Centimeters
+                        </div>
+                    </div>
+                    <div class="main-three-fleft-left">
+                        <div class="fleft-left-left">
+                            Net Quantity
+                        </div>
+                        <div class="fleft-left-right">
+                            1 Piece
+                        </div>
+                    </div>
+                    <div class="main-three-fleft-left">
+                        <div class="fleft-left-left">
+                            Generic Name
+                        </div>
+                        <div class="fleft-left-right">
+                            Laptop
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="footer1">Back to top</div>
+        <div class="footer2">
+            <div class="footer2-one">
+                <div class="footer2-one-dvs">
+                    <div class="dvstxt">Get to Know Us</div>
+                    <ul>
+                        <li>About Us</li>
+                        <li>Careers</li>
+                        <li>Press Releases</li>
+                        <li>Amazon Science</li>
+                    </ul>
+                </div>
+                <div class="footer2-one-dvs">
+                    <div class="dvstxt">Connect with Us</div>
+                    <ul>
+                        <a target="_blank" href="https://www.facebook.com/sammusmarty">
+                            <li>Facebook</li>
+                        </a>
+                        <a target="_blank" href="https://twitter.com/Sammu01_">
+                            <li>Twitter</li>
+                        </a>
+                        <a target="_blank" href="https://www.instagram.com/sammu01_/">
+                            <li>Instagram</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="footer2-one-dvs">
+                    <div class="dvstxt">Make Money with Us</div>
+                    <ul>
+                        <li>Sell on Amazon</li>
+                        <li>Sell under Amazon Accelerator</li>
+                        <li>Protect and Build Your Brand</li>
+                        <li>Amazon Global Selling</li>
+                        <li>Become an Affiliate</li>
+                        <li>Fulfilment by Amazon</li>
+                        <li>Advertise your Product</li>
+                        <li>Amazon Pay on Merchants</li>
+                    </ul>
+                </div>
+                <div class="footer2-one-dvs">
+                    <div class="dvstxt">Let Us Help You</div>
+                    <ul>
+                        <li>COVID-19 and Amazon</li>
+                        <li>Your Account</li>
+                        <li>Returns Centre</li>
+                        <li>100% Purchase Protection</li>
+                        <li>Amazon App Download</li>
+                        <li>Help</li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="footer2-two">
+                <div class="footer2-two1">
+                    <img src="PngItem_12080.png" alt="">
+                    <div class="lngbtn"><span class="material-symbols-outlined">
+                            language
+                        </span>English</div>
+                </div>
+                <div class="footer2-two2">
+                    <span class="countries">australia</span>
+                    <span class="countries">brazil</span>
+                    <span class="countries">canada</span>
+                    <span class="countries">china</span>
+                    <span class="countries">france</span>
+                    <span class="countries">germany</span>
+                    <span class="countries">italy</span>
+                    <span class="countries">japan</span>
+                    <span class="countries">mexico</span>
+                    <span class="countries">netherlands</span>
+                    <span class="countries">poland</span>
+                    <span class="countries">singapore</span>
+                    <span class="countries">spain</span>
+                    <span class="countries">turkey</span>
+                    <span class="countries">uniter arab emirates</span>
+                    <span class="countries">united kingdom</span>
+                    <span class="countries">united states</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

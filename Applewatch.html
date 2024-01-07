@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Amazon.com. Spend less. Smile more</title>
+
+    <link rel="icon" type="jpg"
+        href="data:image/png;base64,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">
+
+    <!-- <link rel="icon" href="image.jpg"> -->
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="items.css">
+
+</head>
+
+<body>
+
+
+    <!-- <header> -->
+    <header class="abvfh">
+        <nav>
+            <div class="nav-one">
+                <ul>
+                    <li class="navs">
+                        <img src="PngItem_12080.png" alt="">
+                    </li>
+                    <li class="navs">
+                        <span class="material-symbols-outlined location-icon">
+                            location_on
+                        </span>
+                        <div class="li-inner-text">
+                            <div class="small-txt">Deliver to MOHAMMAD</div>
+                            <div class="big-text">Narsampet 506132</div>
+                        </div>
+                    </li>
+                    <li class="navs-three">
+                        <select name="dropdown" id="nav-dropdown">
+                            <option value="default" selected>All</option>
+                            <option class="dropdown-font-size" value=" ">Alexa Skills</option>
+                            <option class="dropdown-font-size" value="">Amazon Devices</option>
+                            <option class="dropdown-font-size" value="">Amazon Fashion</option>
+                            <option class="dropdown-font-size" value="">Amazon Fresh</option>
+                            <option class="dropdown-font-size" value="">Amazon Pharmacy</option>
+                            <option class="dropdown-font-size" value="">Appliances</option>
+                            <option class="dropdown-font-size" value="">Apps & Games</option>
+                            <option class="dropdown-font-size" value="">Audible Audio</option>
+                            <option class="dropdown-font-size" value="">Baby</option>
+                            <option class="dropdown-font-size" value="">Beauty</option>
+                            <option class="dropdown-font-size" value="">Books</option>
+                            <option class="dropdown-font-size" value="">Car & Motorbikes</option>
+                            <option class="dropdown-font-size" value="">Clothing & Accessories</option>
+                            <option class="dropdown-font-size" value="">Collectibles</option>
+                            <option class="dropdown-font-size" value="">Computer & Accessories</option>
+                            <option class="dropdown-font-size" value="">Electronics</option>
+                            <option class="dropdown-font-size" value="">Furniture</option>
+                            <option class="dropdown-font-size" value="">Garden & Outdoor</option>
+                            <option class="dropdown-font-size" value="">Giftcards</option>
+                            <option class="dropdown-font-size" value="">Grocery</option>
+                            <option class="dropdown-font-size" value="">Health</option>
+                            <option class="dropdown-font-size" value="">Home & Kitchen</option>
+                            <option class="dropdown-font-size" value="">Industrial & scientific</option>
+                            <option class="dropdown-font-size" value="">Jewellery</option>
+                            <option class="dropdown-font-size" value="">Kindle Store</option>
+                            <option class="dropdown-font-size" value="">Luggage & Bags</option>
+                            <option class="dropdown-font-size" value="">Luxury Beauty</option>
+                            <option class="dropdown-font-size" value="">Movies & TV shows</option>
+                            <option class="dropdown-font-size" value="">Music</option>
+                        </select>
+                        <input type="search" name="search-bar" id="search-bar" placeholder="Search Amazon.in">
+                        <span class="material-symbols-outlined search-icon">
+                            search
+                        </span>
+                    </li>
+                    <li class="navs">
+                        <img src="https://th.bing.com/th/id/OIP.gDlzAPxkwTNSlLymNYiLPAHaE8?pid=ImgDet&w=800&h=534&rs=1"
+                            alt="" class="indianflag">
+                        <div class="languageselector">en</div>
+                        <span class="material-symbols-outlined">
+                            arrow_drop_down
+                        </span>
+                    </li>
+                    <li class="navs">
+                        <div class="li-inner-text">
+                            <div class="small-txt colorwhite">Hello, Mohammad</div>
+                            <div class="big-text">Account & Lists</div>
+                        </div>
+                        <span class="material-symbols-outlined">
+                            arrow_drop_down
+                        </span>
+                    </li>
+                    <li class="navs">
+                        <div class="li-inner-text">
+                            <div class="small-txt colorwhite">Returns</div>
+                            <div class="big-text">& Orders</div>
+                        </div>
+                    </li>
+                    <li class="navs">
+                        <span class="material-symbols-outlined">
+                            shopping_cart
+                        </span>
+                        <div class="big-text">Cart</div>
+                    </li>
+                    <li class="navs">
+                        <span class="material-symbols-outlined">
+                            menu
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <header class="upfh">
+
+        <div class="header-uptofh-one">
+            <div class="header-one-left">
+                <span class="material-symbols-outlined mobile-menu-icon">
+                    menu
+                </span>
+                <img src="PngItem_12080.png" alt="" class="header-phone-logo">
+            </div>
+            <div class="header-one-right">
+                <div class="nameandprofilelogo">
+                    <div class="header-pfname">Mohammad</div>
+                    <span class="material-symbols-outlined">
+                        person
+                    </span>
+                </div>
+                <span class="material-symbols-outlined">
+                    shopping_cart
+                </span>
+            </div>
+        </div>
+
+        <div class="header-uptofh-two">
+            <input type="search" name="search" id="mbl-search-bar" placeholder="Search Amazon.in">
+            <span class="material-symbols-outlined search-icon-mbl">
+                search
+            </span>
+        </div>
+
+        <div class="header-uptofh-three">
+            <ul>
+                <li class="navs">category</li>
+                <li class="navs">your lists</li>
+                <li class="navs">deals</li>
+                <li class="navs">sell</li>
+            </ul>
+        </div>
+
+        <div class="uptothree320px">
+            Switch to other compaitable devices
+        </div>
+
+    </header>
+    <div class="header-bottom-bar">
+        <div class="header-bottom-bar-left">
+            <div class="navs">
+                <span class="material-symbols-outlined">
+                    menu
+                </span>
+                <span class="menualltxt">all</span>
+            </div>
+            <div class="navs">sell</div>
+            <div class="navs">amazon pay</div>
+            <div class="navs">buy again</div>
+            <div class="navs">amazon miniTV</div>
+            <div class="navs">gift cards</div>
+            <div class="navs">coupons</div>
+            <div class="navs">amazonBasics</div>
+            <div class="navs">browsing history</div>
+            <div class="navs">customer service</div>
+        </div>
+        <div class="header-bottom-bar-right navs">
+            <!-- <img src="https://m.media-amazon.com/images/G/31/AmazonVideo/2021/X-site/SingleTitle/TheGreatIndianFamily/400x39-SWM_NP._CB572974686_.jpg" alt="" class="bottom-bar-img"> -->
+            <img src="https://m.media-amazon.com/images/G/31/Gateway_IN/testing/NewLaunches_400x39._CB593645585_.jpg"
+                alt="" class="bottom-bar-img">
+
+        </div>
+        <div class="header-bottom-bar-below500">
+
+            <div class="deliveryadress">
+                <span class="material-symbols-outlined">
+                    location_on
+                </span>
+                <span class="location-add-margin">
+                    Deliver to MOHAMMAD - Narsampet 506132
+                </span>
+                <span class="material-symbols-outlined">
+                    arrow_drop_down
+                </span>
+            </div>
+
+        </div>
+    </div>
+    <div class="adtnl-mbl-navbar">
+        <div class="adtnl-navs">
+            <img src="navimage1.jpg" alt="">
+            <div class="adtnl-mbl-navbar-txt">prime</div>
+        </div>
+        <div class="adtnl-navs">
+            <img src="navimage2.jpg" alt="">
+            <div class="adtnl-mbl-navbar-txt">deals</div>
+        </div>
+        <div class="adtnl-navs">
+            <img src="navimage3.jpg" alt="">
+            <div class="adtnl-mbl-navbar-txt">mobiles</div>
+        </div>
+        <div class="adtnl-navs">
+            <img src="navimage4.jpg" alt="">
+            <div class="adtnl-mbl-navbar-txt">fashion</div>
+        </div>
+        <div class="adtnl-navs">
+            <img src="navimage5.jpg" alt="">
+            <div class="adtnl-mbl-navbar-txt">miniTV</div>
+        </div>
+        <div class="adtnl-navs">
+            <img src="navimage6.jpg" alt="">
+            <div class="adtnl-mbl-navbar-txt">play</div>
+        </div>
+        <div class="adtnl-navs">
+            <img src="navimage7.jpg" alt="">
+            <div class="adtnl-mbl-navbar-txt">electronics</div>
+        </div>
+        <div class="adtnl-navs">
+            <img src="navimage8.jpg" alt="">
+            <div class="adtnl-mbl-navbar-txt">home</div>
+        </div>
+        <div class="adtnl-navs">
+            <img src="navimage9.jpg" alt="">
+            <div class="adtnl-mbl-navbar-txt">travel</div>
+        </div>
+        <div class="adtnl-navs">
+            <img src="navimage10.jpg" alt="">
+            <div class="adtnl-mbl-navbar-txt">beauty</div>
+        </div>
+
+    </div>
+    <!-- </header> -->
+
+    <main>
+        <div class="main-one">
+            <div class="main-one-left">
+                <img class="product-image" src="https://m.media-amazon.com/images/I/810wzMG3BJL._SX679_.jpg" alt="">
+            </div>
+            <div class="main-one-right">
+                <div class="mor-vert-one">
+                    <div class="pdct-info">
+                        Apple Watch Series 9 [GPS 45mm] Smartwatch with Midnight Aluminum Case with Midnight Sport Loop One Size. Fitness Tracker, Blood Oxygen & ECG Apps, Always-On Retina Display, Water Resistant
+                    </div>
+                    <div class="store-details blue-txt">
+                        Visit the Apple Store
+                    </div>
+                    <div class="rating-div">
+                        <div class="rating-stars">
+                            <span>4.9</span>
+                            <img src="ratingicon.png" alt="" class="rating-star">
+                            <img src="ratingicon.png" alt="" class="rating-star">
+                            <img src="ratingicon.png" alt="" class="rating-star">
+                            <img src="ratingicon.png" alt="" class="rating-star">
+                            <img src="ratingicon.png" alt="" class="rating-star">
+                        </div>
+                        <span class="trating border-right blue-txt">
+                            185 ratings
+                        </span>
+                        <span class="trating blue-txt">
+                            30 answered questions
+                        </span>
+                    </div>
+                </div>
+                <div class="mor-vert-two">
+                    <div class="price-ofproduct">
+                        ₹44,900
+                    </div>
+                    <div class="incl-ofproduct smallfontsize">
+                        Inclusive of all taxes
+                    </div>
+                    <div class="emi-ofproduct smallfontsize">
+                        <b>EMI</b> starts at ₹2,177,no cost EMI available <div class="blue-txt">EMI options</div>
+                    </div>
+                </div>
+                <div class="mor-vert-three">
+                    <div class="mor-vert-three-top">
+                        <img src="discountlogo.png" alt="" class="offericon">
+                        <div>offers</div>
+                    </div>
+                    <div class="mor-vert-three-bottom">
+                        <div>
+                            <b>No Cost EMI</b>
+                        </div>
+                        <div>
+                            Upto ₹2,021.81 EMI interest savings on Amazon Pay ICICI Bank Credit…
+                        </div>
+                        <div class="mor-vert-three-btm-ofr">
+                            <span class="blue-txt">1 offer</span> <span class="material-symbols-outlined">
+                                chevron_right
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mor-vert-four">
+                    <div class="mor-vert-four-box">
+                        <img class="mor-four-img"
+                            src="https://m.media-amazon.com/images/G/31/A2I-Convert/mobile/IconFarm/icon-returns._CB484059092_.png"
+                            alt="">
+                        <span class="blue-txt">
+                            7 days Service Centre Replacement
+                        </span>
+                    </div>
+                    <div class="mor-vert-four-box">
+                        <img class="mor-four-img"
+                            src="https://m.media-amazon.com/images/G/31/A2I-Convert/mobile/IconFarm/trust_icon_free_shipping_81px._CB630870460_.png"
+                            alt="">
+                        <span class="blue-txt">
+                            Free Delivery
+                        </span>
+                    </div>
+                    <div class="mor-vert-four-box">
+                        <img class="mor-four-img"
+                            src="https://m.media-amazon.com/images/G/31/A2I-Convert/mobile/IconFarm/icon-warranty._CB485935626_.png"
+                            alt="">
+                        <span class="blue-txt">
+                            Warranty Policy
+                        </span>
+                    </div>
+                    <div class="mor-vert-four-box">
+                        <img class="mor-four-img"
+                            src="https://m.media-amazon.com/images/G/31/A2I-Convert/mobile/IconFarm/icon-top-brand._CB617044271_.png"
+                            alt="">
+                        <span class="blue-txt">
+                            Top Brand
+                        </span>
+                    </div>
+                    <div class="mor-vert-four-box">
+                        <img class="mor-four-img"
+                            src="https://m.media-amazon.com/images/G/31/A2I-Convert/mobile/IconFarm/icon-amazon-delivered._CB485933725_.png"
+                            alt="">
+                        <span class="blue-txt">
+                            Amazon Delivered
+                        </span>
+                    </div>
+                </div>
+                <div class="mor-vert-five">
+                    <ul>
+                        <b>About this item</b>
+                        <li>
+                            CARBON NEUTRAL — An aluminium Apple Watch Series 9 paired with the latest Sport Loop is
+                            carbon neutral.
+                        </li>
+                        <li>
+                            WHY APPLE WATCH SERIES 9 — Your essential companion for a healthy life is now even more
+                            powerful. The S9 chip enables a super-bright display and a magical new way to quickly and
+                            easily interact with your Apple Watch without touching the screen. Advanced health, safety
+                            and activity features provide powerful insights and help when you need it. And redesigned
+                            apps in watchOS give you more information at a glance.
+                        </li>
+                        <li>
+                            ADVANCED HEALTH FEATURES—Keep an eye on your blood oxygen. Take an ECG anytime. Get
+                            notifications if you have an irregular heart rhythm. See how much time you spent in REM,
+                            Core, or Deep sleep with sleep stages. Temperature sensing provides insights into overall
+                            well-being and cycle tracking. And take note of your state of mind to help build emotional
+                            awareness and resilience.
+                        </li>
+                        <li>
+                            A POWERFUL FITNESS PARTNER—The Workout app gives you a range of ways to train plus advanced
+                            metrics for more insights about your workout performance.
+                        </li>
+                        <li>
+                            INNOVATIVE SAFETY FEATURES—Fall Detection and Crash Detection can connect you with emergency
+                            services in the event of a hard fall or a severe car crash. And Emergency SOS lets you call
+                            for help with the press of a button.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main-two">
+            <img src="https://m.media-amazon.com/images/G/31/img21/Apple_Series9_23/series9_LTE_Desktop_1500_IN_01._CB578107722_.jpg" alt="" class="imagesfmaintwo">
+            <img src="https://m.media-amazon.com/images/G/31/img21/Apple_Series9_23/series9_LTE_Desktop_1500_IN_02._CB578107722_.jpg" alt="" class="imagesfmaintwo">
+            <img src="https://m.media-amazon.com/images/G/31/img21/Apple_Series9_23/series9_LTE_Desktop_1500_IN_03._CB578107722_.jpg" alt="" class="imagesfmaintwo">
+            <img src="https://m.media-amazon.com/images/G/31/img21/Apple_Series9_23/series9_LTE_Desktop_1500_IN_04._CB578107722_.jpg" alt="" class="imagesfmaintwo">
+            <img src="https://m.media-amazon.com/images/G/31/img21/Apple_Series9_23/series9_LTE_Desktop_1500_IN_05._CB578107722_.jpg" alt="" class="imagesfmaintwo">
+            <img src="https://m.media-amazon.com/images/G/31/img21/Apple_Series9_23/series9_LTE_Desktop_1500_IN_06._CB578107722_.jpg" alt="" class="imagesfmaintwo">
+            <img src="https://m.media-amazon.com/images/G/31/img21/Apple_series9/SE_LTE_Amazon_Desktop_1500_IN_07._CB578166976_.jpg" alt="" class="imagesfmaintwo">
+            <img src="https://m.media-amazon.com/images/G/31/img21/Apple_Series9_23/series9_LTE_Desktop_1500_IN_08._CB578107722_.jpg" alt="" class="imagesfmaintwo">
+            <img src="https://m.media-amazon.com/images/G/31/img21/Apple_Series9_23/series9_LTE_Desktop_1500_IN_09._CB578107722_.jpg" alt="" class="imagesfmaintwo">
+            <img src="" alt="" class="imagesfmaintwo">
+            <img src="" alt="" class="imagesfmaintwo">
+            <img src="" alt="" class="imagesfmaintwo">
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="footer1">Back to top</div>
+        <div class="footer2">
+            <div class="footer2-one">
+                <div class="footer2-one-dvs">
+                    <div class="dvstxt">Get to Know Us</div>
+                    <ul>
+                        <li>About Us</li>
+                        <li>Careers</li>
+                        <li>Press Releases</li>
+                        <li>Amazon Science</li>
+                    </ul>
+                </div>
+                <div class="footer2-one-dvs">
+                    <div class="dvstxt">Connect with Us</div>
+                    <ul>
+                        <a target="_blank" href="https://www.facebook.com/sammusmarty">
+                            <li>Facebook</li>
+                        </a>
+                        <a target="_blank" href="https://twitter.com/Sammu01_">
+                            <li>Twitter</li>
+                        </a>
+                        <a target="_blank" href="https://www.instagram.com/sammu01_/">
+                            <li>Instagram</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="footer2-one-dvs">
+                    <div class="dvstxt">Make Money with Us</div>
+                    <ul>
+                        <li>Sell on Amazon</li>
+                        <li>Sell under Amazon Accelerator</li>
+                        <li>Protect and Build Your Brand</li>
+                        <li>Amazon Global Selling</li>
+                        <li>Become an Affiliate</li>
+                        <li>Fulfilment by Amazon</li>
+                        <li>Advertise your Product</li>
+                        <li>Amazon Pay on Merchants</li>
+                    </ul>
+                </div>
+                <div class="footer2-one-dvs">
+                    <div class="dvstxt">Let Us Help You</div>
+                    <ul>
+                        <li>COVID-19 and Amazon</li>
+                        <li>Your Account</li>
+                        <li>Returns Centre</li>
+                        <li>100% Purchase Protection</li>
+                        <li>Amazon App Download</li>
+                        <li>Help</li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="footer2-two">
+                <div class="footer2-two1">
+                    <img src="PngItem_12080.png" alt="">
+                    <div class="lngbtn"><span class="material-symbols-outlined">
+                            language
+                        </span>English</div>
+                </div>
+                <div class="footer2-two2">
+                    <span class="countries">australia</span>
+                    <span class="countries">brazil</span>
+                    <span class="countries">canada</span>
+                    <span class="countries">china</span>
+                    <span class="countries">france</span>
+                    <span class="countries">germany</span>
+                    <span class="countries">italy</span>
+                    <span class="countries">japan</span>
+                    <span class="countries">mexico</span>
+                    <span class="countries">netherlands</span>
+                    <span class="countries">poland</span>
+                    <span class="countries">singapore</span>
+                    <span class="countries">spain</span>
+                    <span class="countries">turkey</span>
+                    <span class="countries">uniter arab emirates</span>
+                    <span class="countries">united kingdom</span>
+                    <span class="countries">united states</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
