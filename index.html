@@ -7,8 +7,7 @@
 
     <title>Amazon.com. Spend less. Smile more</title>
 
-    <link rel="icon" type="jpg"
-        href="https://i.pinimg.com/736x/01/ca/da/01cada77a0a7d326d85b7969fe26a728.jpg">
+    <link rel="icon" type="jpg" href="https://i.pinimg.com/736x/01/ca/da/01cada77a0a7d326d85b7969fe26a728.jpg">
 
     <!-- <link rel="icon" href="image.jpg"> -->
 
@@ -51,9 +50,82 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="footer.css">
 
+
+
+    <style>
+        .Welcome-logo {
+            height: 0;
+            width: 0;
+            animation: divlogo 2s ease;
+        }
+
+        .Welcome-logo img {
+            animation: Logoanimationimg 2s ease;
+            height: 0;
+            width: 0;
+        }
+
+        @keyframes divlogo {
+            0% {
+                height: 100vh;
+                width: 100%;
+                background: #333;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+                position: absolute;
+                top: 0;
+                visibility: visible;
+                z-index: 10000;
+            }
+
+            100% {
+                height: 100vh;
+                width: 100%;
+                background: #333;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+                position: absolute;
+                top: 0;
+                z-index: 10000;
+                visibility: visible;
+            }
+        }
+
+        @keyframes Logoanimationimg {
+            0% {
+                height: 0;
+                width: 0;
+                object-fit: contain;
+            }
+
+            50% {
+                height: 50vh;
+                width: 50vw;
+                object-fit: contain;
+            }
+
+            100% {
+                height: 0;
+                width: 0;
+                object-fit: contain;
+            }
+        }
+    </style>
+
+
 </head>
 
 <body>
+
+    <!-- animation-tag -->
+    <div class="Welcome-logo">
+        <img src="PngItem_12080.png" alt="">
+    </div>
+
     <!-- <header> -->
     <header class="abvfh">
         <nav>
