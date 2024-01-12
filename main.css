@@ -1349,7 +1349,10 @@ main {
         cursor: pointer;
 
     }
-
+    .main-one-adv .main-two-cards-errorfree{
+        background: red;
+        display: none;
+    }
     .seealldealsbtn-incontainer:hover {
         color: red;
         text-decoration: underline;
