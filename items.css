@@ -1062,6 +1062,15 @@ input[type="radio"]:checked::before {
     .main-three {
         width: 110rem;
     }
+    .main-zero{
+        width: 110rem;
+        margin: auto;
+        font-size: 1em;
+    }
+    .main-zero-two{
+        width: 110rem;
+        margin: auto;
+    }
 }
 
 @media screen and (min-width:701px) and (max-width:1050px) {
