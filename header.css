@@ -123,6 +123,16 @@ header nav .nav-one ul li:nth-child(1) img {
 .imagesearch-icon img {
     height: 1.4em;
 }
+.navs-three{
+    box-sizing: border-box;
+    border: 2px solid transparent;
+}
+.navs-three:active{
+    /* box-sizing: border-box; */
+    border: 2px solid #f0a94c;
+    background: #f0a94c;
+    border-radius: 8px;
+}
 
 #nav-dropdown {
     width: 3.5rem;
@@ -152,6 +162,16 @@ header nav .nav-one ul li:nth-child(1) img {
     font-size: 0.9rem;
     font-family: Arial, Helvetica, sans-serif;
     border: 0;
+}
+#search-bar:focus{
+    all: unset;
+    width: 41rem;
+    height: 2.5rem;
+    padding: 0 0.5rem;
+    font-size: 0.9rem;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 0;
+    background: white;
 }
 
 select option {
@@ -308,6 +328,9 @@ select option {
     .header-bottom-bar .navs {
         font-size: 1.2rem;
 
+    }
+    .header-bottom-bar-right img{
+        height: 100%;
     }
 }
 
