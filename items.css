@@ -1,5 +1,5 @@
 :root {
-    --lightblack: rgba(0, 0, 0, 0.367);
+    --lightblack: rgba(0, 0, 0, .1);
 }
 
 .main-one {
@@ -36,9 +36,10 @@
 
 .pdct-info {
     font-size: 1.5em;
+    font-size: 1.5vw;
     font-family: sans-serif;
     user-select: text;
-    letter-spacing: 1.4px;
+    letter-spacing: 1px;
 }
 
 .blue-txt {
@@ -85,7 +86,7 @@
 
 .price-ofproduct {
     font-size: 1.5em;
-    padding: 0.5em 0;
+    /* padding: 0.5em 0; */
     /* background: darkblue; */
     box-sizing: border-box;
     padding-bottom: 0.3em;
@@ -475,7 +476,185 @@
 }
 
 
+.main-zero {
+    width: 100%;
+    /* background: red; */
+    height: 3.2em;
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
+    font-size: 0.77em;
+    font-size: 0.8vw;
+    padding: 0 0 0 2em;
+    box-sizing: border-box;
+    border-bottom: 1px solid var(--lightblack);
+}
 
+.main-tag {
+    color: #333;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.main-tag a {
+    text-decoration: none;
+    color: black;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid transparent;
+    padding: 0 1em;
+}
+
+.main-tag a:hover,
+.main-tag a:active {
+    color: #e47911;
+    border-bottom: 3px solid #e47911;
+}
+
+.main-tag:first-child {
+    font-weight: bold;
+    color: black;
+}
+
+
+.main-one-left {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.images-bar {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background: red; */
+}
+
+.images-bar-img-box {
+    border: 2px solid var(--lightblack);
+    width: 2.8em;
+    height: 2.8em;
+    margin-bottom: 0.8em;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.images-bar-img {
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-image {
+    width: 85%;
+    object-fit: contain;
+}
+
+
+/* Reset default styles for radio buttons */
+input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    margin-right: 5px;
+    /* Add spacing between the radio button and label */
+}
+
+/* Style the checked state */
+input[type="radio"]:checked {
+    background-color: #007185;
+    /* Change the background color when checked */
+    border-color: #007185;
+    /* Change the border color when checked */
+}
+
+/* Hide the default radio button dot */
+input[type="radio"]::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+/* Show the custom dot when the radio button is checked */
+input[type="radio"]:checked::before {
+    opacity: 1;
+}
+
+
+
+
+
+.main-zero-two {
+    /* background: red; */
+    height: 9em;
+    display: flex;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    margin-top: 1em;
+}
+
+.main-zero-two-box {
+    height: 100%;
+    width: 10%;
+    overflow: hidden;
+    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.82em;
+    text-align: center;
+    padding: 0.5em 0;
+    box-sizing: border-box;
+}
+
+.main-zero-two-box a {
+    all: unset;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+.main-zero-two-box img {
+    width: 100%;
+    height: 60%;
+    object-fit: contain;
+}
+.main-zero-two-box .main-zero-100img{
+    height: 80%;
+}
+.main-zero-two-box div {
+    /* height: 40%; */
+    /* background: red; */
+    overflow: hidden;
+    color: #0066c0;
+    /* white-space: nowrap; */
+    display: flex;
+    justify-content: center;
+    padding: 0.5em 0;
+    /* align-items: center; */
+}
 
 
 
@@ -490,6 +669,13 @@
 
 
 @media screen and (max-width:700px) {
+    .main-zero {
+        display: none;
+    }
+
+    .images-bar {
+        display: none;
+    }
 
     .adtnl-mbl-navbar {
         display: none;
@@ -507,7 +693,7 @@
         overflow-x: hidden;
         color: var(--whitecolor-color);
         user-select: none;
-        position:unset;
+        position: unset;
         top: 0;
         z-index: 100;
         overflow-y: hidden;
@@ -526,7 +712,7 @@
         height: 50.4px;
         display: flex;
         justify-content: space-between;
-        align-items: center;        
+        align-items: center;
     }
 
     @keyframes headeranimation {
@@ -651,6 +837,8 @@
 
     .product-image {
         width: 100%;
+        height: 50vh;
+        object-fit: contain;
     }
 
     .main-one-right {
@@ -665,11 +853,11 @@
     }
 
     .pdct-info {
-        font-size: 1.3em;
+        font-size: 1em;
+        letter-spacing: 0.5px;
     }
 
     .trating {
-        /* background: red; */
         padding: 0 0.5em 0 0.5em;
     }
 
@@ -804,9 +992,59 @@
         font-size: 0.8em;
         cursor: pointer;
     }
-    .main-one-right-last{
+
+    .main-one-right-last {
         width: 100%;
         box-sizing: border-box;
+    }
+
+
+    .main-zero-two {
+        /* background: red; */
+        height: 7em;
+        display: flex;
+        justify-content: space-evenly;
+        box-sizing: border-box;
+        margin-top: 1em;
+        /* border-bottom: 1px solid var(--lightblack); */
+    }
+
+    .main-zero-two-box {
+        height: 100%;
+        width: 23%;
+        overflow: hidden;
+        font-family: sans-serif;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.5em;
+        text-align: center;
+        padding: 0.5em 0;
+        box-sizing: border-box;
+        /* border-right: 1px solid var(--lightblack); */
+        border-left: 1px solid var(--lightblack);
+    }
+    .main-zero-two-box:nth-child(8),.main-zero-two-box:nth-child(7),.main-zero-two-box:nth-child(6),.main-zero-two-box:nth-child(5),.main-zero-two-box:nth-child(5){
+        background: red;
+        display: none;
+    }
+    .main-zero-two-box a {
+        all: unset;
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+    }
+
+    .main-zero-two-box img {
+        width: 100%;
+        height: 60%;
+        object-fit: contain;
+    }
+
+    .main-zero-two-box div {
+        overflow: hidden;
+        color: #0066c0;
+        display: flex;
+        justify-content: center;
+        padding: 0.5em 0;
     }
 
 
@@ -816,25 +1054,30 @@
     .main-one {
         width: 110rem;
     }
+
     .main-two {
         width: 110rem;
     }
+
     .main-three {
         width: 110rem;
     }
 }
 
 @media screen and (min-width:701px) and (max-width:1050px) {
-    .main-one-left{
+    .main-one-left {
         width: 35%;
     }
+
     .product-image {
-        width: 100%;
+        width: 85%;
     }
-    .main-one-right{
+
+    .main-one-right {
         width: 40%;
     }
-    .main-one-right-last{
+
+    .main-one-right-last {
         width: 25%;
     }
 }
