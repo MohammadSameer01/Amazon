@@ -56,11 +56,13 @@
         .Welcome-logo {
             height: 0;
             width: 0;
-            animation: divlogo 2s ease;
+            animation: divlogo 2.5s ease;
+            /* animation: divlogo 10s ease; */
         }
 
         .Welcome-logo img {
             animation: Logoanimationimg 2s ease;
+            /* animation: Logoanimationimg 10s ease; */
             height: 0;
             width: 0;
         }
@@ -70,6 +72,8 @@
                 height: 100vh;
                 width: 100%;
                 background: #333;
+                background: white;
+                /* background: #232F3E; */
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -78,12 +82,16 @@
                 top: 0;
                 visibility: visible;
                 z-index: 10000;
+                position: fixed;
             }
+
 
             100% {
                 height: 100vh;
                 width: 100%;
                 background: #333;
+                background: white;
+                /* background: #232F3E; */
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -92,6 +100,7 @@
                 top: 0;
                 z-index: 10000;
                 visibility: visible;
+                position: fixed;
             }
         }
 
@@ -99,10 +108,18 @@
             0% {
                 height: 0;
                 width: 0;
+                height: 50vh;
+                width: 50vw;
                 object-fit: contain;
             }
 
             50% {
+                height: 50vh;
+                width: 50vw;
+                object-fit: contain;
+            }
+
+            80% {
                 height: 50vh;
                 width: 50vw;
                 object-fit: contain;
@@ -123,7 +140,10 @@
 
     <!-- animation-tag -->
     <div class="Welcome-logo">
-        <img src="PngItem_12080.png" alt="">
+        <div class="img">
+            <img src="amazon-logo-new.png" alt="">
+            <!-- <img src="https://cdn.dribbble.com/users/3823197/screenshots/6867534/smile2.0_dribble_hello.gif" alt=""> -->
+        </div>
     </div>
 
     <!-- <header> -->
