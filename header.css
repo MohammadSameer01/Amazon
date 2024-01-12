@@ -14,6 +14,7 @@
     --mobiledarkclr-color: #232F3E;
     --mobilelightclr-color: #37475A;
 }
+
 /* html::-webkit-scrollbar{
     width: 0.5vw;
 }
@@ -40,7 +41,7 @@ nav {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    animation: header 0.1s ease-in;
+    /* animation: header 0.1s ease-in; */
 }
 
 .nav-one {
@@ -110,6 +111,19 @@ header nav .nav-one ul li:nth-child(1) img {
     margin: 0 20px;
 }
 
+.navs-three .imagesearch-icon {
+    background: #ffffff;
+    height: 2.5em;
+    display: flex;
+    align-items: center;
+    width: 2em;
+    justify-content: center;
+}
+
+.imagesearch-icon img {
+    height: 1.4em;
+}
+
 #nav-dropdown {
     width: 3.5rem;
     height: 2.5rem;
@@ -132,6 +146,7 @@ header nav .nav-one ul li:nth-child(1) img {
 
 #search-bar {
     width: 44rem;
+    width: 42rem;
     height: 2.5rem;
     padding: 0 0.5rem;
     font-size: 0.9rem;
@@ -265,6 +280,20 @@ select option {
 
     #search-bar {
         height: 80%;
+        width: 660px;
+    }
+
+    .navs-three .imagesearch-icon {
+        background: #ffffff;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        width: 4em;
+        justify-content: center;
+    }
+
+    .imagesearch-icon img {
+        height: 1.4em;
     }
 
     .search-icon {
@@ -286,13 +315,13 @@ select option {
 
 @media screen and (min-width:1445px) and (max-width:1500px) {
     #search-bar {
-        width: 40rem;
+        width: 38rem;
     }
 }
 
 @media screen and (min-width:1285px) and (max-width:1444px) {
     #search-bar {
-        width: 30rem;
+        width: 28rem;
     }
 
     .header-bottom-bar .header-bottom-bar-left .navs:nth-child(3) {
@@ -306,7 +335,7 @@ select option {
 
 @media screen and (min-width:1200px) and (max-width:1284px) {
     #search-bar {
-        width: 24rem;
+        width: 22rem;
     }
 
     .header-bottom-bar .header-bottom-bar-left .navs:nth-child(3) {
@@ -320,7 +349,7 @@ select option {
 
 @media screen and (min-width:1100px) and (max-width:1199px) {
     #search-bar {
-        width: 18rem;
+        width: 16rem;
     }
 
     .header-bottom-bar .header-bottom-bar-left .navs:nth-child(3) {
@@ -338,7 +367,7 @@ select option {
 
 @media screen and (min-width:1000px) and (max-width:1100px) {
     #search-bar {
-        width: 17.5rem;
+        width: 15.5rem;
     }
 
     .nav-one ul li:nth-child(4) {
@@ -360,7 +389,7 @@ select option {
 
 @media screen and (min-width:900px) and (max-width:1000px) {
     #search-bar {
-        width: 20rem;
+        width: 18rem;
     }
 
     .nav-one ul li:nth-child(4) {
@@ -390,7 +419,7 @@ select option {
 
 @media screen and (min-width:800px) and (max-width:900px) {
     #search-bar {
-        width: 19.5rem;
+        width: 17.5rem;
     }
 
     .nav-one ul li:nth-child(4) {
@@ -444,6 +473,19 @@ select option {
 
     #nav-dropdown {
         height: 2rem;
+    }
+
+    .navs-three .imagesearch-icon {
+        background: #ffffff;
+        height: 2em;
+        display: flex;
+        align-items: center;
+        width: 2em;
+        justify-content: center;
+    }
+
+    .imagesearch-icon img {
+        height: 1.2em;
     }
 
     .search-icon {
@@ -501,7 +543,7 @@ select option {
 
 @media screen and (min-width:500px) and (max-width:600px) {
     #search-bar {
-        width: 15rem;
+        width: 13rem;
         height: 1.8rem;
     }
 
@@ -511,10 +553,25 @@ select option {
 
     #nav-dropdown {
         height: 1.8rem;
+        width: 4em;
     }
 
     .search-icon {
         height: 1.8rem;
+        width: 1.5em;
+    }
+
+    .navs-three .imagesearch-icon {
+        background: #ffffff;
+        height: 1.8em;
+        display: flex;
+        align-items: center;
+        width: 2em;
+        justify-content: center;
+    }
+
+    .imagesearch-icon img {
+        height: 1em;
     }
 
     .nav-one ul li:nth-child(1) {
@@ -596,11 +653,7 @@ select option {
     }
 }
 
-
-
 @media screen and (min-width:280px) and (max-width:500px) {
-
-
     .abvfh {
         display: none;
     }
@@ -612,6 +665,7 @@ select option {
     .upfh {
         background-color: var(--mobiledarkclr-color);
         height: 9rem;
+        height: 144px;
         width: 100vw;
         overflow-x: hidden;
         color: var(--whitecolor-color);
@@ -631,6 +685,7 @@ select option {
     .header-uptofh-one {
         width: 100%;
         height: 35%;
+        height: 50.4px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -673,6 +728,7 @@ select option {
 
     .header-uptofh-two {
         height: 35%;
+        height: 50.4px;
         padding: 0 8px 0 8px;
         display: flex;
         justify-content: center;
