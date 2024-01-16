@@ -123,11 +123,13 @@ header nav .nav-one ul li:nth-child(1) img {
 .imagesearch-icon img {
     height: 1.4em;
 }
-.navs-three{
+
+.navs-three {
     box-sizing: border-box;
     border: 2px solid transparent;
 }
-.navs-three:active{
+
+.navs-three:active {
     /* box-sizing: border-box; */
     border: 2px solid #f0a94c;
     background: #f0a94c;
@@ -163,7 +165,8 @@ header nav .nav-one ul li:nth-child(1) img {
     font-family: Arial, Helvetica, sans-serif;
     border: 0;
 }
-#search-bar:focus{
+
+#search-bar:focus {
     all: unset;
     width: 41rem;
     height: 2.5rem;
@@ -301,6 +304,14 @@ select option {
     #search-bar {
         height: 80%;
         width: 660px;
+        transition: all 0.1s ease;
+    }
+
+    #search-bar:focus {
+        height: 80%;
+        width: 94rem;
+        width: 100rem;
+        transition: all 0.3s ease;
     }
 
     .navs-three .imagesearch-icon {
@@ -329,7 +340,8 @@ select option {
         font-size: 1.2rem;
 
     }
-    .header-bottom-bar-right img{
+
+    .header-bottom-bar-right img {
         height: 100%;
     }
 }
@@ -340,11 +352,19 @@ select option {
     #search-bar {
         width: 38rem;
     }
+
+    #search-bar:focus {
+        width: 37rem;
+    }
 }
 
 @media screen and (min-width:1285px) and (max-width:1444px) {
     #search-bar {
         width: 28rem;
+    }
+
+    #search-bar:focus {
+        width: 27rem;
     }
 
     .header-bottom-bar .header-bottom-bar-left .navs:nth-child(3) {
@@ -361,6 +381,10 @@ select option {
         width: 22rem;
     }
 
+    #search-bar:focus {
+        width: 21rem;
+    }
+
     .header-bottom-bar .header-bottom-bar-left .navs:nth-child(3) {
         display: none;
     }
@@ -373,6 +397,10 @@ select option {
 @media screen and (min-width:1100px) and (max-width:1199px) {
     #search-bar {
         width: 16rem;
+    }
+
+    #search-bar:focus {
+        width: 15rem;
     }
 
     .header-bottom-bar .header-bottom-bar-left .navs:nth-child(3) {
@@ -391,6 +419,10 @@ select option {
 @media screen and (min-width:1000px) and (max-width:1100px) {
     #search-bar {
         width: 15.5rem;
+    }
+
+    #search-bar:focus {
+        width: 14.5rem;
     }
 
     .nav-one ul li:nth-child(4) {
@@ -413,6 +445,10 @@ select option {
 @media screen and (min-width:900px) and (max-width:1000px) {
     #search-bar {
         width: 18rem;
+    }
+
+    #search-bar:focus {
+        width: 17rem;
     }
 
     .nav-one ul li:nth-child(4) {
@@ -443,6 +479,10 @@ select option {
 @media screen and (min-width:800px) and (max-width:900px) {
     #search-bar {
         width: 17.5rem;
+    }
+
+    #search-bar:focus {
+        width: 16.5rem;
     }
 
     .nav-one ul li:nth-child(4) {
@@ -490,8 +530,20 @@ select option {
         height: 2rem;
     }
 
+    #search-bar:focus {
+        width: 19rem;
+        height: 2rem;
+    }
+
     .navs-three {
         margin: 0;
+    }
+
+    .navs-three:active {
+        /* box-sizing: border-box; */
+        border: 2px solid transparent;
+        background: unset;
+        border-radius: unset;
     }
 
     #nav-dropdown {
@@ -570,8 +622,20 @@ select option {
         height: 1.8rem;
     }
 
+    #search-bar:focus {
+        width: 12rem;
+        height: 1.8rem;
+    }
+
     .navs-three {
         margin: 0;
+    }
+
+    .navs-three:active {
+        /* box-sizing: border-box; */
+        border: 2px solid transparent;
+        background: unset;
+        border-radius: unset;
     }
 
     #nav-dropdown {
@@ -843,27 +907,44 @@ select option {
 }
 
 @media screen and (min-width:0) and (max-width:279px) {
-    * {
-        visibility: hidden;
+
+    footer,
+    main,
+    .abvfh,
+    .upfh,
+    .header-bottom-bar,
+    .adtnl-mbl-navbar {
+        display: none;
+
     }
 
-    body {
-        height: 100vw;
-        background-color: var(--darkclr-color);
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        text-align: center;
+    * {
+        background: white;
     }
 
     .uptothree320px {
         visibility: visible;
-        font-size: 3rem;
-        position: absolute;
+        height: 100vh;
         width: 100vw;
-        left: 0;
-        margin: 180px;
-        color: var(--whitecolor-color);
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 12vw;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        background: white;
+        overflow: hidden;
+    }
+
+    .uptothree320px img {
+        width: 50vw;
+        position: absolute;
+        top: 35vh;
+        height: 100vh;
+        object-fit: contain;
+        background: unset;
     }
 
 }
