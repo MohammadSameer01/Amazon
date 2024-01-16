@@ -653,6 +653,13 @@ main {
     color: red;
 }
 
+.bottom-bar-img{
+    height: 100%;
+    width: 27vw;
+    object-fit: contain;
+    box-sizing: border-box;
+}
+
 @media screen and (min-width:280px) and (max-width:500px) {
     main {
         width: 100vw;
@@ -1393,7 +1400,7 @@ main {
 
         /* background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img23/Wireless/Samsung/SamsungM/M13/1stDec/D50328974_IN_WLME_SamsungGalaxy_M13_series_Tall_Hero_1500x600._CB572209152_.jpg); */
 
-        background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img23/Wireless/OnePlus/CommunitySale/2023/DEC12/11R/D106945245-_WLD_OnePlus_CommunitySale_Dec23_DesktopTallHero_3000x1200._CB571104905_.jpg);
+        background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/Events/img24/Jan24/GW/JanART24_NTA_PC_HERO_2_2X._CB584284438_.jpg);
 
 
     }
@@ -1408,6 +1415,9 @@ main {
         background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img17/Home/AmazonTV/Ishqiyapa/Hero_PC/3000x1200_Ishqyapa_V3._CB572210125_.jpg);
 
         background-image: url(https://m.media-amazon.com/images/I/81MCcdjpC7L._SX3000_.jpg);
+        
+        background-image: url(https://images-eu.ssl-images-amazon.com/images/G/31/img23/Wireless/OnePlus/CommunitySale/2023/DEC12/11R/D106945245-_WLD_OnePlus_CommunitySale_Dec23_DesktopTallHero_3000x1200._CB571104905_.jpg);
+
 
     }
 
