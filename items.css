@@ -641,9 +641,11 @@ input[type="radio"]:checked::before {
     height: 60%;
     object-fit: contain;
 }
-.main-zero-two-box .main-zero-100img{
+
+.main-zero-two-box .main-zero-100img {
     height: 80%;
 }
+
 .main-zero-two-box div {
     /* height: 40%; */
     /* background: red; */
@@ -669,7 +671,15 @@ input[type="radio"]:checked::before {
 
 
 @media screen and (max-width:700px) {
+
     .main-zero {
+        font-size: 0.555em;
+    }
+
+    .main-tag:nth-last-child(1),
+    .main-tag:nth-last-child(2),
+    .main-tag:nth-last-child(3),
+    .main-tag:nth-last-child(4){
         display: none;
     }
 
@@ -1002,7 +1012,7 @@ input[type="radio"]:checked::before {
     .main-zero-two {
         /* background: red; */
         height: 7em;
-        display: flex;
+        display: none;
         justify-content: space-evenly;
         box-sizing: border-box;
         margin-top: 1em;
@@ -1022,10 +1032,16 @@ input[type="radio"]:checked::before {
         /* border-right: 1px solid var(--lightblack); */
         border-left: 1px solid var(--lightblack);
     }
-    .main-zero-two-box:nth-child(8),.main-zero-two-box:nth-child(7),.main-zero-two-box:nth-child(6),.main-zero-two-box:nth-child(5),.main-zero-two-box:nth-child(5){
+
+    .main-zero-two-box:nth-child(8),
+    .main-zero-two-box:nth-child(7),
+    .main-zero-two-box:nth-child(6),
+    .main-zero-two-box:nth-child(5),
+    .main-zero-two-box:nth-child(5) {
         background: red;
         display: none;
     }
+
     .main-zero-two-box a {
         all: unset;
         cursor: pointer;
@@ -1062,12 +1078,14 @@ input[type="radio"]:checked::before {
     .main-three {
         width: 110rem;
     }
-    .main-zero{
+
+    .main-zero {
         width: 110rem;
         margin: auto;
         font-size: 1em;
     }
-    .main-zero-two{
+
+    .main-zero-two {
         width: 110rem;
         margin: auto;
     }
